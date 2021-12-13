@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OASIS</title>
+  <meta name="subject" content="OASIS" />
+  <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../../css/slick.css">
+  <link rel="stylesheet" type="text/css" href="../../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../../css/common.css">
+  <script type="text/javascript" src="../../js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../js/validator.min.js"></script>
+  <script type="text/javascript" src="../../js/slick.min.js"></script>
+  <script type="text/javascript" src="../../js/common.js"></script>
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- header -->
+    <div class="header">
+      <div class="inner_header">
+        <div class="nav">
+          <h1 class="logo"><a href="../main/index.html">OASIS</a></h1>
+          <div class="gnb">
+            <ul class="login_before">
+              <li class=""><a href="../membership/login.html">로그인</a></li>
+              <li><a href="../membership/membership.html">회원가입</a></li>
+            </ul>
+            <!-- 로그인 후 -->
+            <!-- <ul class="login_after">
+              <li class=""><a href="">로그아웃</a></li>
+              <li><a href="../membership/my_infomation.html">마이페이지</a></li>
+            </ul> -->
+            <!--// 로그인 후 -->
+            <div class="form-group select_box">
+              <label for="" class="sr-only"></label>
+              <select class="form-control" name="">
+                <option class="" value="">KOR</option>
+                <option class="" value="">EUC</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="menu_inner">
+            <ul class="clearfix">
+              <li><a href="../business/company_list.html">기업정보</a></li>
+              <li><a href="../guide/guide.html">이용가이드</a></li>
+              <li><a href="../trend/forum_list.html">OASIS 동향</a></li>
+              <li><a href="../guide/about_oasis.html">OASIS 소개</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //header -->
+    <!-- container -->
+    <div class="container">
+      <div class="title_box bg_mypage">
+        <div class="inner_title">
+          <h2>마이페이지</h2>
+        </div>
+      </div>
+      <div class="breadcrumb_wrap">
+        <div class="breadcrumb_inner">
+          <ul class="clearfix">
+            <li class="home"><a href="../main/index.html">홈</a></li>
+            <li class="breadcrumb_select">
+              <label for="color">마이페이지</label>
+            </li>
+            <li>가입정보 수정</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab_nav">
+        <ul>
+          <li class="active"><a href="my_information_company.html">가입정보 수정</a></li>
+          <li><a href="interesting_company.html">관심기업</a></li>
+          <li><a href="matching_company.html">기업자동매칭</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="sub_title">
+          <h3>가입정보 _ 기업</h3>
+        </div>
+        <!-- 공통가입 내용 0723 -->
+        <div class="table_box ver02">
+          <table class="table table_view">
+            <caption>가입정보 등록</caption>
+            <colgroup>
+              <col width="166px">
+              <col width="*">
+              <col width="166px">
+              <col width="*">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>기관분류<span class="must">*</span></th>
+                <td colspan="3">
+                  <div class="form-group radio_box">
+                    <input class="form-control" type="radio" id="categorize01" name="categorize" value="personal" disabled="">
+                    <label for="categorize01">개인</label>
+                    <input class="form-control" type="radio" id="categorize02" name="categorize" value="organization" disabled="">
+                    <label for="categorize02">기관</label>
+                    <input class="form-control" type="radio" id="categorize03" name="categorize" value="company" checked>
+                    <label for="categorize03">기업</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>아이디<span class="must">*</span></th>
+                <td class="id_td">
+                  <div class="form-group">
+                    <label for="" class="sr-only">아이디</label>
+                    <input class="form-control" type="text" id="" value="jooya1002" readonly="">
+                  </div>
+                  <!-- <button class="btn btn_blue">중복확인</button> -->
+                </td>
+                <th>이름<span class="must">*</span></th>
+                <td>
+                  <div class="form-group">
+                    <label for="" class="sr-only">이름</label>
+                    <input class="form-control" type="text" id="" value="">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>비밀번호<span class="must">*</span></th>
+                <td class="id_td">
+                  <div class="form-group">
+                    <label for="" class="sr-only">비밀번호</label>
+                    <input class="form-control" type="password" id="" value="" placeholder="숫자/한글 조합으로 6자이상">
+                  </div>
+                  <span class="add_txt">*숫자/한글 조합으로 6자이상</span>
+                </td>
+                <th>비밀번호 확인<span class="must">*</span></th>
+                <td class="id_td">
+                  <div class="form-group">
+                    <label for="" class="sr-only">비밀번호 확인</label>
+                    <input class="form-control" type="password" id="" value="" placeholder="숫자/한글 조합으로 6자이상">
+                  </div>
+                  <span class="add_txt">*숫자/한글 조합으로 6자이상</span>
+                </td>
+              </tr>
+              <tr>
+                <th>이메일<span class="must">*</span></th>
+                <td>
+                  <div class="form-group">
+                    <label for="" class="sr-only">이메일</label>
+                    <input class="form-control" type="email" id="" value="" placeholder="" data-error="입력하신 양식이 올바르지 않습니다, 다시 입력해 주세요.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </td>
+                <th>연락처<span class="must">*</span></th>
+                <td class="id_td">
+                  <div class="form-group">
+                    <label for="" class="sr-only">연락처</label>
+                    <input class="form-control" type="text" id="" value="">
+                  </div>
+                  <span class="add_txt" x-ms-format-detection="none">*(예: 02-1111-2222)</span>
+                  <!-- ie Edge 스타일 -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--// 공통가입 내용 0723 -->
+        <div class="tab_nav company_tab ver03">
+          <ul>
+            <li class="on"><a href="#tab01">일반정보</a></li>
+            <li><a href="#tab02">기업특징</a></li>
+            <li><a href="#tab03">채무정보</a></li>
+            <li><a href="#tab04">투자현황계획</a></li>
+            <li><a href="#tab05">글로벌협력수요</a></li>
+            <li><a href="#tab06">정부 R&D 사업 참여 여부</a></li>
+          </ul>
+        </div>
+        <div class="company_wrap">
+          <div class="company_list" id="tab01">
+            <div class="table_box ver02">
+              <table class="table table_list">
+                <caption>일반정보 등록</caption>
+                <colgroup>
+                  <col width="166px">
+                  <col width="*">
+                  <col width="166px">
+                  <col width="*">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>회사명(국문)<span class="must">*</span></th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">회사명(국문)</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <th>회사명(영문)<span class="must">*</span></th>
+                    <td>
+                      <div class="form-group clearfix">
+                        <label for="" class="sr-only">회사명(영문)</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>설립년도<span class="must">*</span></th>
+                    <td>
+                      <div class="form-group date">
+                        <label for="" class="sr-only">설립년도</label>
+                        <input class="form-control" type="text" name="" value="" id="datepicker" readonly="" />
+                      </div>
+                    </td>
+                    <th>대표자명<span class="must">*</span></th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">대표자명</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>업종분류<span class="must">*</span></th>
+                    <td>
+                      <div class="form-group select_box">
+                        <label for="" class="sr-only">업종분류</label>
+                        <select class="form-control" name="">
+                          <option class="" value="">선택</option>
+                          <option class="" value="">선택</option>
+                        </select>
+                      </div>
+                    </td>
+                    <th>한국표준산업분류(KSIC)<span class="must">*</span></th>
+                    <td class="id_td">
+                      <div class="form-group">
+                        <label for="" class="sr-only">한국표준산업분류(KSIC)</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                      <button class="btn btn_blue">찾기</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>자본금<span class="must">*</span>
+                      <br/>(단위: 백만원)</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">자본금</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <th>상장여부<span class="must">*</span></th>
+                    <td>
+                      <div class="form-group radio_box">
+                        <input class="form-control" type="radio" id="type05" value="type05" name="enterprise" checked="">
+                        <label for="type05" class="">전체</label>
+                        <input class="form-control" type="radio" id="type06" value="type06" name="enterprise">
+                        <label for="type06" class="">상장</label>
+                        <input class="form-control" type="radio" id="type07" value="type07" name="enterprise">
+                        <label for="type05" class="">비상장</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>투자가능성<span class="must">*</span></th>
+                    <td>
+                      <div class="form-group select_box">
+                        <label for="" class="sr-only">투자가능성</label>
+                        <select class="form-control" name="">
+                          <option class="" value="">선택</option>
+                          <option class="" value="">선택</option>
+                        </select>
+                      </div>
+                    </td>
+                    <th>종업원수(명)<span class="must">*</span></th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">종업원수</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>대표전화<span class="must">*</span></th>
+                    <td class="id_td">
+                      <div class="form-group">
+                        <label for="" class="sr-only">대표전화</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                      <span class="add_txt" x-ms-format-detection="none">*(예: 02-1111-2222)</span>
+                      <!-- ie Edge 스타일 -->
+                    </td>
+                    <th>홈페이지<span class="must">*</span></th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">홈페이지</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>본사소재지</th>
+                    <td colspan="3">
+                      <div class="form_wrap clearfix">
+                        <div class="form-group select_box" style="width: 152px">
+                          <label for="" class="sr-only"></label>
+                          <select class="form-control" name="">
+                            <option class="" value="">선택</option>
+                            <option class="" value="">선택</option>
+                          </select>
+                        </div>
+                        <div class="form-group select_box" style="width: 152px;margin-left: 14px">
+                          <label for="" class="sr-only"></label>
+                          <select class="form-control" name="">
+                            <option class="" value="">선택</option>
+                            <option class="" value="">선택</option>
+                          </select>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>본사주소<span class="must">*</span></th>
+                    <td class="id_td" colspan="3">
+                      <div class="form-group" style="width: 152px">
+                        <label for="" class="sr-only">본사주소</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                      <button class="btn btn_blue" style="width: 118px">우편번호 찾기</button>
+                      <div class="form-group add_input" style="margin-left: 14px">
+                        <label for="" class="sr-only">상세주소</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                      <div class="form-group add_input" style="margin-left: 14px">
+                        <label for="" class="sr-only">상세주소</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>메모</th>
+                    <td colspan="3">
+                      <div class="form-group">
+                        <label for="" class="sr-only">메모</label>
+                        <textarea name="" id="" cols="30" rows="8"></textarea>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="company_list" id="tab02">
+            <div class="table_box ver02">
+              <table class="table table_list">
+                <caption>기업특징 등록</caption>
+                <colgroup>
+                  <col width="166px">
+                  <col width="*">
+                  <col width="166px">
+                  <col width="*">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>주요 거래처</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">주요 거래처</label>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                      </div>
+                    </td>
+                    <th>해외 진출현황</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">해외 진출현황</label>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>사업분야 및 사업내용</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">사업분야 및 사업내용</label>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                      </div>
+                    </td>
+                    <th>주생산품</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">주생산품</label>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>상품코드</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">상품코드</label>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                      </div>
+                    </td>
+                    <th>제품특징</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">제품특징</label>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>기술경쟁력</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">기술경쟁력</label>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                      </div>
+                    </td>
+                    <th>특허관련 내용</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">특허관련 내용</label>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>시장점유율(0%)</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">시장점유율</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <th>보유특허수</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">보유특허수</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="company_list" id="tab03">
+            <span class="legend_txt">(단위 : 백만원)</span>
+            <div class="table_box ver03">
+              <table class="table table_list">
+                <caption>주요 재무상태표</caption>
+                <colgroup>
+                  <col width="14%">
+                  <col width="14%">
+                  <col width="14%">
+                  <col width="14%">
+                  <col width="14%">
+                  <col width="14%">
+                  <col width="*">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>년도</th>
+                    <th>매출액</th>
+                    <th>영업이익</th>
+                    <th>단기순이익</th>
+                    <th>자산총계</th>
+                    <th>부채총계</th>
+                    <th>기능</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="form-group select_box">
+                        <label for="" class="sr-only">업종분류</label>
+                        <select class="form-control" name="">
+                          <option class="" value="">선택</option>
+                          <option class="" value="">선택</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <td>
+                      <button class="btn btn_blue">등록</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table_box ver03 add_table">
+              <table class="table table_list">
+                <caption>주요 재무상태표</caption>
+                <colgroup>
+                  <col width="14%">
+                  <col width="14%">
+                  <col width="14%">
+                  <col width="14%">
+                  <col width="14%">
+                  <col width="14%">
+                  <col width="*">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>년도</th>
+                    <th>매출액</th>
+                    <th>영업이익</th>
+                    <th>단기순이익</th>
+                    <th>자산총계</th>
+                    <th>부채총계</th>
+                    <th>기능</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2009</td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <td>
+                      <button class="btn btn_br">수정</button>
+                      <button class="btn btn_gray btn_mr">삭제</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2008</td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <td>
+                      <button class="btn btn_br">수정</button>
+                      <button class="btn btn_gray btn_mr">삭제</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="company_list" id="tab04">
+            <span class="legend_txt">(단위 : 백만원)</span>
+            <div class="table_box ver03">
+              <table class="table table_list">
+                <caption>주요 재무상태표</caption>
+                <colgroup>
+                  <col width="25%">
+                  <col width="25%">
+                  <col width="25%">
+                  <col width="25%">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>투자구분</th>
+                    <th>년도</th>
+                    <th>투자금액</th>
+                    <th>기능</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="form-group select_box">
+                        <label for="" class="sr-only">투자구분</label>
+                        <select class="form-control" name="">
+                          <option class="" value="">선택</option>
+                          <option class="" value="">선택</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group select_box">
+                        <label for="" class="sr-only">년도</label>
+                        <select class="form-control" name="">
+                          <option class="" value="">선택</option>
+                          <option class="" value="">선택</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">투자금액</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <td>
+                      <button class="btn btn_blue">등록</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table_box ver02 add_table">
+              <table class="table table_list">
+                <caption>기업특징 등록</caption>
+                <colgroup>
+                  <col width="25%">
+                  <col width="25%">
+                  <col width="25%">
+                  <col width="25%">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>설비투자</th>
+                    <td colspan="3">
+                      <div class="add_td">
+                        <div class="form-group select_box">
+                          <label for="" class="sr-only">년도</label>
+                          <select class="form-control" name="">
+                            <option class="" value="">선택</option>
+                            <option class="" value="">선택</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="" class="sr-only">투자금액</label>
+                          <input class="form-control" type="text" id="" value="">
+                        </div>
+                        <div class="btn_group">
+                          <button class="btn btn_br">수정</button>
+                          <button class="btn btn_gray">삭제</button>
+                        </div>
+                      </div>
+                      <div class="add_td">
+                        <div class="form-group select_box">
+                          <label for="" class="sr-only">년도</label>
+                          <select class="form-control" name="">
+                            <option class="" value="">선택</option>
+                            <option class="" value="">선택</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="" class="sr-only">투자금액</label>
+                          <input class="form-control" type="text" id="" value="">
+                        </div>
+                        <div class="btn_group">
+                          <button class="btn btn_br">수정</button>
+                          <button class="btn btn_gray">삭제</button>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th> R&D 투자</th>
+                    <td colspan="3">
+                      <div class="add_td">
+                        <div class="form-group select_box">
+                          <label for="" class="sr-only">년도</label>
+                          <select class="form-control" name="">
+                            <option class="" value="">선택</option>
+                            <option class="" value="">선택</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="" class="sr-only">투자금액</label>
+                          <input class="form-control" type="text" id="" value="">
+                        </div>
+                        <div class="btn_group">
+                          <button class="btn btn_br">수정</button>
+                          <button class="btn btn_gray">삭제</button>
+                        </div>
+                      </div>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table_box ver02 add_table" style="margin-top: 30px">
+              <table class="table table_list">
+                <caption>투자계획 등록</caption>
+                <colgroup>
+                  <col width="120px">
+                  <col width="120px">
+                  <col width="*">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th rowspan="3" style="border-bottom:0">투자계획</th>
+                    <th class="text-center">전략</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">전략</label>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="text-center">방향</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">전략</label>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="text-center">시점</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">전략</label>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="company_list" id="tab05">
+            <div class="table_box ver02">
+              <table class="table table_list">
+                <caption>글로벌협력수요 등록</caption>
+                <colgroup>
+                  <col width="166px">
+                  <col width="*">
+                  <col width="166px">
+                  <col width="*">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>투자유치 목적</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">투자유치 목적</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <th>협력 희망국가</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">협력 희망국가</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>협력 희망금액</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">협력 희망금액</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <th>투자유치 금액</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">투자유치 금액</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>담당자</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">담당자</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <th>부서</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">부서</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>직위</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">직위</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <th>연락처</th>
+                    <td class="id_td">
+                      <div class="form-group">
+                        <label for="" class="sr-only">연락처</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                      <span class="add_txt" x-ms-format-detection="none">*(예: 02-1111-2222)</span>
+                      <!-- ie Edge 스타일 -->
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>이메일</th>
+                    <td colspan="3">
+                      <div class="form-group" style="width: 344px">
+                        <label for="" class="sr-only">이메일</label>
+                        <input class="form-control" type="email" id="" value="" placeholder="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>투자유치방식</th>
+                    <td colspan="3">
+                      <div class="form-group check_box">
+                        <input class="form-control" type="checkbox" id="invest01" name="invest">
+                        <label for="invest01">재무적 투자</label>
+                        <input class="form-control" type="checkbox" id="invest02" name="invest">
+                        <label for="invest02">M&A</label>
+                        <input class="form-control" type="checkbox" id="invest03" name="invest">
+                        <label for="invest03">JV</label>
+                        <input class="form-control" type="checkbox" id="invest04" name="invest">
+                        <label for="invest04">기술협력</label>
+                        <input class="form-control" type="checkbox" id="invest05" name="invest">
+                        <label for="invest05">지분투자</label>
+                        <input class="form-control" type="checkbox" id="invest06" name="invest">
+                        <label for="invest06">공동R&D</label>
+                        <input class="form-control" type="checkbox" id="invest07" name="invest">
+                        <label for="invest07">기타</label>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="company_list" id="tab06">
+            <div class="table_box ver02">
+              <table class="table table_list">
+                <caption>정부 R&D 사업 참여 여부 등록</caption>
+                <colgroup>
+                  <col width="166px">
+                  <col width="*">
+                  <col width="166px">
+                  <col width="*">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>R&D 과제명</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">R&D 과제명</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <th>총 정부출연금(확정)</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">총 정부출연금(확정)</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>투자기관</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">투자기관</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                    <th>총 투자금액</th>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only">총 투자금액</label>
+                        <input class="form-control" type="text" id="" value="">
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- 기업일 경우 기업자동매칭 0723 -->
+        <div class="company_rad">
+          <div class="sub_title">
+            <h3>기업자동매칭 신청</h3>
+          </div>
+          <div class="summary_wrap">
+            <div class="form-group check_box">
+              <input class="form-control" type="checkbox" id="match1" value="">
+              <label for="match1" class="">기업자동매칭 서비스 받아보기</label>
+            </div>
+          </div>
+        </div>
+        <!--// 기업일 경우 기업자동매칭 0723 -->
+        <!-- bottom_btn -->
+        <div class="bottom_btn">
+          <button class="btn btn_blue" type="">확인</button>
+          <button class="btn btn_gray_br" type="">취소</button>
+        </div>
+        <!--// bottom_btn -->
+      </div>
+    </div>
+    <!-- //container -->
+    <!-- footer -->
+    <div class="footer">
+      <div class="foot_nav">
+        <div class="inner_con">
+          <ul>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">이용약관</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="inner_con">
+        <div class="foot_txt">
+          <p>
+            <span>서울시 강남구 삼성동 159 트레이드타워 12층 (135-729) / Tel : 02-6000-7940</span>
+            <strong>Copyright (c) 2018 한국 소재부품 투자기관 협의회 all right reserved</strong>
+          </p>
+          <span class="tell">대표번호 : 02-6000-7940 | 담당자번호 : 02-6000-7974<br/>담당자메일 : dhkim@kitia.or.kr | 팩스 : 02-6000-7998</span>
+        </div>
+      </div>
+    </div>
+    <!-- //footer -->
+    <!-- 탈퇴 팝업 -->
+    <div class="modal fade modal-center" id="leave_modal">
+      <div class="modal-dialog sm">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <button type="button" class="close" data-dismiss="modal"></button>
+            <h4 class="modal-title">탈퇴요청</h4>
+          </div>
+          <div class="modal-body">
+            <div class="modal_txt">
+              <p>정말로 탈퇴하시겠습니까?</p>
+            </div>
+            <div class="bottom_btn02">
+              <button class="btn btn_blue" data-target="#confirm_modal" data-toggle="modal">탈퇴요청</button>
+              <button class="btn btn_gray_br text-blue">취소</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// 탈퇴 팝업 -->
+    <!-- 탈퇴 확인 팝업 -->
+    <div class="modal fade modal-center" id="confirm_modal">
+      <div class="modal-dialog sm">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <button type="button" class="close" data-dismiss="modal"></button>
+            <h4 class="modal-title">탈퇴확인</h4>
+          </div>
+          <div class="modal-body">
+            <div class="modal_txt">
+              <p>탈퇴 처리 되었습니다.
+                <br/>이용해 주셔서 감사합니다.</p>
+            </div>
+            <div class="bottom_btn">
+              <button class="btn btn_blue">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// 탈퇴 확인 팝업 -->
+  </div>
+</body>
+
+</html>

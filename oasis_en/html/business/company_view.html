@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OASIS</title>
+    <meta name="subject" content="OASIS" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <script type="text/javascript" src="../../js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/validator.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- header -->
+    <div class="header">
+      <div class="inner_header">
+        <div class="nav">
+          <h1 class="logo"><a href="../main/index.html">OASIS</a></h1>
+          <div class="gnb">
+            <ul class="login_before">
+              <li class=""><a href="../membership/login.html">로그인</a></li>
+              <li><a href="../membership/membership.html">회원가입</a></li>
+            </ul>
+            <!-- 로그인 후 -->
+            <!-- <ul class="login_after">
+              <li class=""><a href="">로그아웃</a></li>
+              <li><a href="../membership/my_infomation.html">마이페이지</a></li>
+            </ul> -->
+            <!--// 로그인 후 -->
+            <div class="form-group select_box">
+              <label for="" class="sr-only"></label>
+              <select class="form-control" name="">
+                <option class="" value="">KOR</option>
+                <option class="" value="">EUC</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="menu_inner">
+            <ul class="clearfix">
+              <li class="active"><a href="">기업정보</a></li>
+              <li><a href="../guide/guide.html">이용가이드</a></li>
+              <li><a href="../trend/forum_list.html">OASIS 동향</a></li>
+              <li><a href="../guide/about_oasis.html">OASIS 소개</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //header -->
+
+    <!-- container -->
+    <div class="container">
+      <div class="title_box bg_business">
+        <div class="inner_title">
+          <h2>기업정보</h2>
+        </div>
+      </div>
+      <div class="breadcrumb_wrap">
+        <div class="breadcrumb_inner">
+          <ul class="clearfix">
+            <li class="home"><a href="../main/index.html">홈</a></li>
+            <li class="breadcrumb_select">
+              <label for="color">기업정보</label>
+              <ul class="breadcrumb_list">
+                <li><a href="">기업정보</a></li>
+                <li><a href="">이용가이드</a></li>
+                <li><a href="">OASIS 동향</a></li>
+                <li><a href="">OASIS 소개</a></li>
+              </ul>
+            </li>
+            <li>기업정보</li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="sub_title">
+          <h2>기업정보</h2>
+        </div>
+        <div class="company_list_top">
+          <h4>국내 - Oasis Korea </h4>
+          <div class="company_name">
+            <strong>(유)창성정밀</strong>
+            <button class="like pick">좋아요</button>
+            <button class="btn matching_btn" style="" data-target="#matching_modal" data-toggle="modal">기업 매칭하기</button>
+            <button class="btn btn_excel" type="">액셀다운로드</button>
+          </div>
+        </div>
+        <div class="tab_nav company_tab ver02">
+          <ul>
+            <li class="on"><a href="#tab01">요약정보</a></li>
+            <li><a href="#tab02">일반정보</a></li>
+            <li><a href="#tab03">기업특징</a></li>
+            <li><a href="#tab04">채무정보</a></li>
+            <li><a href="#tab05">투자현황계획</a></li>
+            <li><a href="#tab06">글로벌협력수요</a></li>
+            <li><a href="#tab07">활동기록</a></li>
+          </ul>
+        </div>
+        <div class="company_wrap">
+          <div class="company_list" id="tab01">
+            <div class="table_box ver02 borT">
+              <table class="table table_list">
+                <caption>요약정보</caption>
+                <colgroup>
+                  <col width="170px">
+                  <col width="*">
+                  <col width="170px">
+                  <col width="*">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>법인(주민번호)</th>
+                    <td>170111-0205600</td>
+                    <th>설립일자/기업형태</th>
+                    <td>2001-09-20 / 외감</td>
+                  </tr>
+                  <tr>
+                    <th>종업원수/전화번호</th>
+                    <td>285명 / 053-608-3622</td>
+                    <th>당좌거래은행</th>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <th>주소(도로명)</th>
+                    <td colspan="3">(43020) 대구 달성군 현풍면 테크노대로2길 10 (중리)</td>
+                  </tr>
+                </tbody>
+              </table> 
+            </div>
+            <div class="sub_title">
+              <h3>주요 재무정보</h3>
+            </div>
+            <div class="summary_info">
+              <div class="dvide">
+                <div class="info_box_left">
+                  <div class="info_box_top">
+                    <h4>주요 재무상태표</h4>
+                  </div>
+                  <div class="info_con">
+                    <div class="table_box">
+                      <table class="table table_list">
+                        <caption>주요 재무상태표</caption>
+                        <colgroup>
+                          <col width="25%">
+                          <col width="25%">
+                          <col width="25%">
+                          <col width="25%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>구분</th>
+                            <th>2014</th>
+                            <th>2015</th>
+                            <th>2016</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>자산총계</td>
+                            <td>104,626</td>
+                            <td>106,196</td>
+                            <td>106,274</td>
+                          </tr>
+                          <tr>
+                            <td>부채총계</td>
+                            <td>104,626</td>
+                            <td>106,196</td>
+                            <td>106,274</td>
+                          </tr>
+                          <tr>
+                            <td>자본총계</td>
+                            <td>104,626</td>
+                            <td>106,196</td>
+                            <td>106,274</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="chart_box">chart01</div>
+                  </div>
+                </div>
+                <div class="info_box_right">
+                  <div class="info_box_top">
+                    <h4>주요 손익계산서</h4>
+                  </div>
+                  <div class="info_con">
+                    <div class="table_box">
+                      <table class="table table_list">
+                        <caption>주요 손익계산서</caption>
+                        <colgroup>
+                          <col width="25%">
+                          <col width="25%">
+                          <col width="25%">
+                          <col width="25%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>구분</th>
+                            <th>2014</th>
+                            <th>2015</th>
+                            <th>2016</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>매출액</td>
+                            <td>104,626</td>
+                            <td>106,196</td>
+                            <td>106,274</td>
+                          </tr>
+                          <tr>
+                            <td>영업이익</td>
+                            <td>104,626</td>
+                            <td>106,196</td>
+                            <td>106,274</td>
+                          </tr>
+                          <tr>
+                            <td>단기순이익</td>
+                            <td>104,626</td>
+                            <td>106,196</td>
+                            <td>106,274</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="chart_box">chart02</div>
+                  </div>
+                </div>
+              </div>
+              <div class="dvide">
+                <div class="info_box_top clearfix">
+                  <h4>주요 재무비율</h4>
+                </div>
+                <div class="info_box_left">
+                  <div class="info_con">
+                    <div class="table_box">
+                      <table class="table table_list ver03">
+                        <caption>주요 재무비율</caption>
+                        <colgroup>
+                          <col width="50%">
+                          <col width="25%">
+                          <col width="25%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th rowspan="2">구분</th>
+                            <th>해당업체</th>
+                            <th>산업평균</th>
+                          </tr>
+                          <tr>
+                            <th>2016</th>
+                            <th>2016</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>매출액증가율 (성장성)</td>
+                            <td>1.94</td>
+                            <td>4.00</td>
+                          </tr>
+                          <tr>
+                            <td>영업이익률 (수익성)</td>
+                            <td>1.94</td>
+                            <td>4.00</td>
+                          </tr>
+                          <tr>
+                            <td>자기자본비율 (안정성)</td>
+                            <td>1.94</td>
+                            <td>4.00</td>
+                          </tr>
+                          <tr>
+                            <td>이자보상배수 (안정성)</td>
+                            <td>1.94</td>
+                            <td>4.00</td>
+                          </tr>
+                          <tr>
+                            <td>매출채권회전율 (활동성)</td>
+                            <td>1.94</td>
+                            <td>4.00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="info_box_right">
+                  <div class="info_con">
+                    <div class="chart_box" style="width:100%;height:328px">chart03</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="company_list" id="tab02">
+            <div class="table_box ver02 borT">
+              <table class="table table_list">
+                <caption>일반정보</caption>
+                <colgroup>
+                  <col width="170px">
+                  <col width="*">
+                  <col width="170px">
+                  <col width="*">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>회사명 (국문)</th>
+                    <td>(유)창성정밀 </td>
+                    <th>회사명 (영문)</th>
+                    <td>CHANGSUNG PRECISION PRIVATE CO. </td>
+                  </tr>
+                  <tr>
+                    <th>회사명 (일문)</th>
+                    <td>カネテック株式会社</td>
+                    <th>자본금</th>
+                    <td>5,658 백만엔</td>
+                  </tr>
+                  <tr>
+                    <th>설립년도</th>
+                    <td>YYYY.MM.DD</td>
+                    <th>대표자명</th>
+                    <td>김만복</td>
+                  </tr>
+                  <tr>
+                    <th>업종분류(대>중>소)</th>
+                    <td>기계.장비 > 화학 소재 > 자동차용 도로</td>
+                    <th>자본금 (단위: 백만원)</th>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <th>상장여부</th>
+                    <td>비상장</td>
+                    <th>투자가능성</th>
+                    <td>중</td>
+                  </tr>
+                  <tr>
+                    <th>대표전화</th>
+                    <td>055-364-2311</td>
+                    <th>종업원수 (명)</th>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <th>홈페이지</th>
+                    <td><a href="http://www.changsung.kr/shop/main/index.php">http://www.changsung.kr/shop/main/index.php</a></td>
+                    <th>본사 소재지</th>
+                    <td>(626-280)  경남 양산시 소주동 4-8</td>
+                  </tr>
+                  <tr>
+                    <th>메모</th>
+                    <td colspan="3"></td>
+                  </tr>
+                </tbody>
+              </table> 
+            </div>
+          </div>
+          <div class="company_list" id="tab03">
+            
+          </div>
+          <div class="company_list" id="tab04">
+            
+          </div>
+          <div class="company_list" id="tab05">
+            
+          </div>
+          <div class="company_list" id="tab06">
+            
+          </div>
+          <div class="company_list" id="tab07">
+            
+          </div>
+        </div>
+        <!-- bottom_btn -->
+        <div class="bottom_btn">
+          <a href="company_list.html" class="btn btn_blue">목록</a>
+        </div>
+        <!--// bottom_btn -->
+      </div>
+    </div>
+    <!-- //container -->
+    <!-- footer -->
+    <div class="footer">
+      <div class="foot_nav">
+        <div class="inner_con">
+          <ul>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">이용약관</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="inner_con"> 
+        <div class="foot_txt">
+          <p>
+            <span>서울시 강남구 삼성동 159 트레이드타워 12층 (135-729) / Tel : 02-6000-7940</span>
+            <strong>Copyright (c) 2018 한국 소재부품 투자기관 협의회 all right reserved</strong>
+          </p>
+          <span class="tell">대표번호 : 02-6000-7940 | 담당자번호 : 02-6000-7974<br/>담당자메일 : dhkim@kitia.or.kr | 팩스 : 02-6000-7998</span>
+        </div>
+      </div>
+    </div>
+    <!-- //footer -->
+
+    <!-- 단위선택 팝업 -->
+    <div class="modal fade modal-center" id="matching_modal">
+      <div class="modal-dialog sm">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <button type="button" class="close" data-dismiss="modal"></button>
+            <h4 class="modal-title">기업매칭</h4>
+          </div>
+          <div class="modal-body">
+            <div class="modal_con modal_form">
+              <div class="form-group check_box">
+                <input class="form-control" type="checkbox" id="nation02" name="nation">
+                <label for="nation02" class="flag label_korea"></label>
+                <span>KOREA</span>
+              </div>
+              <div class="form-group check_box">
+                <input class="form-control" type="checkbox" id="nation04" name="nation">
+                <label for="nation04" class="flag label_japan"></label>
+                <span>JAPAN</span>
+              </div>
+              <div class="form-group check_box">
+                <input class="form-control" type="checkbox" id="nation05" name="nation">
+                <label for="nation05" class="flag label_germany"></label>
+                <span>GERMANY</span>
+              </div>
+              <!-- <div class="form-group check_box">
+                <input class="form-control" type="checkbox" id="nation06" name="nation">
+                <label for="nation06" class="flag label_china"></label>
+                <span>CHINA</span>
+              </div> -->
+              <div class="form-group check_box">
+                <input class="form-control" type="checkbox" id="nation07" name="nation">
+                <label for="nation07" class="flag label_usa"></label>
+                <span>USA</span>
+              </div>
+            </div>
+            <div class="bottom_btn">
+              <button class="btn btn_blue">적용</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// 단위선택 팝업 -->
+  </div>
+</body>
+
+</html>

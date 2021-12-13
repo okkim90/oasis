@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OASIS</title>
+    <meta name="subject" content="OASIS" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <script type="text/javascript" src="../../js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/validator.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- header -->
+    <div class="header">
+      <div class="inner_header">
+        <div class="nav">
+          <h1 class="logo"><a href="../main/index.html">OASIS</a></h1>
+          <div class="gnb">
+            <ul class="login_before">
+              <li class=""><a href="../membership/login.html">로그인</a></li>
+              <li><a href="../membership/membership.html">회원가입</a></li>
+            </ul>
+            <!-- 로그인 후 -->
+            <!-- <ul class="login_after">
+              <li class=""><a href="">로그아웃</a></li>
+              <li><a href="../membership/my_infomation.html">마이페이지</a></li>
+            </ul> -->
+            <!--// 로그인 후 -->
+            <div class="form-group select_box">
+              <label for="" class="sr-only"></label>
+              <select class="form-control" name="">
+                <option class="" value="">KOR</option>
+                <option class="" value="">EUC</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="menu_inner">
+            <ul class="clearfix">
+              <li><a href="../business/company_list.html">기업정보</a></li>
+              <li><a href="../guide/guide.html">이용가이드</a></li>
+              <li class="active"><a href="../trend/forum_list.html">OASIS 동향</a></li>
+              <li><a href="../guide/about_oasis.html">OASIS 소개</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //header -->
+
+    <!-- container -->
+    <div class="container pdB0">
+      <div class="main_content">
+        <!-- 메인배너 -->
+        <div class="main_banner">
+          <a href="">
+            <video id="main_video" width="100%" height="auto" autoplay loop muted>
+              <source src="../../images/main/kor.mp4" type="video/mp4">
+              <source src="../../images/main/kor.webm" type="video/webm">
+            </video>
+            <div class="float_box">
+              <h4>해외 소재 부품 기업 정보를 한 눈에</h4>
+              <p>유망 투자기업과 투자자간 정보연계를<br/>지원하여 건강한 투자 생태계를 만들어 갑니다</p>
+              <span class="slide_btn">자세히 보기</span>
+            </div>
+          </a>
+        </div>
+        <!--// 메인배너 -->
+        <!-- 숫자로 보는 오아시스 -->
+        <div class="oasis_total gray_bg">
+          <div class="main_inner">
+            <h2 class="main_title">숫자로 보는 <span>OASIS</span></h2>
+            <ul>
+              <li>
+                <img src="../../images/main/total_img01.png" alt="">
+                <span><strong class="count" data-count="120">0</strong>개</span>
+                <p>120개<br/>KITIA 회원사</p>
+              </li>
+              <li>
+                <img src="../../images/main/total_img02.png" alt="">
+                <span><strong class="count" data-count="1000">0</strong>개</span>
+                <p>투자자연계형기술개발<br/>사업 수행 기업</p>
+              </li>
+              <li>
+                <img src="../../images/main/total_img03.png" alt="">
+                <span><strong class="count" data-count="11384">0</strong>개</span>
+                <p>국내외<br/>OASIS DB</p>
+              </li>
+              <li>
+                <img src="../../images/main/total_img04.png" alt="">
+                <span><strong class="count" data-count="50">0</strong>개</span>
+                <p>투자협력<br/>네트워크</p>
+              </li>
+              <li>
+                <img src="../../images/main/total_img05.png" alt="">
+                <span><strong class="count" data-count="150">0</strong>개</span>
+                <p>KOTRA<br/>외투희망기업</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--// 숫자로 보는 오아시스 -->
+        <!-- 오아시스 정보 -->
+        <div class="oasis_info">
+          <div class="main_inner">
+            <ul>
+              <li class="guide_link">
+                <img src="../../images/main/link_img01.jpg" alt="">
+                <a class="float_link_box" href="../guide/guide.html">
+                  <span class="link_txt">
+                    <span class="top_bor"></span>
+                    <strong>이용가이드</strong>
+                    <p>보다 확대된 전문가 서비스와 효율적인<br/>One-stop 서비스를 제공하고 있습니다. </p>
+                  </span>
+                </a>
+              </li>
+              <li class="cunsel_link">
+                <img src="../../images/main/link_img02.jpg" alt="">
+                <a class="float_link_box" href="../trend/request_counsel.html">
+                  <span class="link_txt">
+                    <strong>문의/상담</strong>
+                    <p>서비스 이용 관련 문의사항이 있으신가요?<br/>문의/상담을 통해 접수해 주세요</p>
+                  </span>
+                </a>
+              </li>
+              <li class="keyword_list">
+                <div class="keyword_title">
+                  <strong>OASIS <span>실시간 검색어</span></strong>
+                </div>
+                <ol>
+                  <li><a href="">금속<i class="rise"></i></a></li>
+                  <li><a href="">가나다 테크가나다 테크가나다 테크가나다 테크<i class="down"></i></a></li>
+                  <li><a href="">엔제니어링</a></li>
+                  <li><a href="">공작기계</a></li>
+                  <li><a href="">....</a></li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--// 오아시스 정보 -->
+        <!-- 오아시스 지역 -->
+        <div class="oasis_area gray_bg">
+          <div class="main_inner">
+            <h2 class="main_title"><span>OASIS</span> 지역별 기업정보현황</a></h2>
+            <div class="area_wrap">
+              <div class="map">
+                <span class="map_arrow"><span>지역을 선택하여<br/> 지역별 기업정보를 확인해보세요</span></span>
+                <div class="map_img">
+                  <a href="#map01" class="map01">
+                    <img src="../../images/main/map_01.png" alt="">
+                    <span class="txt_tooltop"><span>충청남도</span><strong>36</strong></span>
+                  </a>
+                  <a href="#map02" class="map02">
+                    <img src="../../images/main/map_02.png" alt="">
+                    <span class="txt_tooltop"><span>대전</span><strong>36</strong></span>
+                  </a>
+                  <a href="#map03" class="map03">
+                    <img src="../../images/main/map_03.png" alt="">
+                    <span class="txt_tooltop"><span>전라북도</span><strong>36</strong></span>
+                  </a>
+                  <a href="#map04" class="map04">
+                    <img src="../../images/main/map_04.png" alt="">
+                    <span class="txt_tooltop"><span>광주</span><strong>36</strong></span>
+                  </a>
+                  <a href="#map05" class="map05">
+                    <img src="../../images/main/map_05.png" alt="">
+                    <span class="txt_tooltop"><span>전라남도</span><strong>36</strong></span>
+                  </a>
+                  <a href="#map06" class="map06">
+                    <img src="../../images/main/map_06.png" alt="">
+                    <span class="txt_tooltop"><span>경상남도</span><strong>36</strong></span>
+                  </a>
+                  <a href="#map07" class="map07">
+                    <img src="../../images/main/map_07.png" alt="">
+                    <span class="txt_tooltop"><span>부산</span><strong>36</strong></span>
+                  </a>
+                  <a href="#map08" class="map08">
+                    <img src="../../images/main/map_08.png" alt="">
+                    <span class="txt_tooltop"><span>울산</span><strong>36</strong></span>
+                  </a>
+                  <a href="#map09" class="map09">
+                    <img src="../../images/main/map_09.png" alt="">
+                    <span class="txt_tooltop"><span>대구</span><strong>36</strong></span>
+                  </a>
+                  <a href="#map10" class="map10">
+                    <img src="../../images/main/map_10.png" alt="">
+                    <span class="txt_tooltop"><span>경상북도</span><strong>36</strong></span>
+                  </a>
+                  <a href="#map11" class="map11">
+                    <img src="../../images/main/map_11.png" alt="">
+                    <span class="txt_tooltop"><span>충청북도</span><strong>36</strong></span>
+                  </a>
+                  <a href="#map12" class="map12">
+                    <img src="../../images/main/map_12.png" alt="">
+                    <span class="txt_tooltop"><span>강원</span><strong>36</strong></span>
+                  </a>
+                  <a href="#map13" class="map13">
+                    <img src="../../images/main/map_13.png" alt="">
+                    <span class="txt_tooltop"><span>인천</span><strong>36</strong></span>
+                  </a>
+                  <a href="#map14" class="map14">
+                    <img src="../../images/main/map_14.png" alt="">
+                    <span class="txt_tooltop"><span>경기도</span><strong>36</strong></span>
+                  </a>
+                  <a href="#map15" class="map15 on">
+                    <img src="../../images/main/map_15.png" alt="">
+                    <span class="txt_tooltop"><span>서울</span><strong>36</strong></span>
+                  </a>
+                  <a href="#map16" class="map16">
+                    <img src="../../images/main/map_16.png" alt="">
+                    <span class="txt_tooltop"><span>제주도</span><strong>36</strong></span>
+                  </a>
+                </div>
+              </div>
+              <div class="area_info">
+                <ul>
+                  <li id="map01">
+                    <!-- 0416 수정 -->
+                    <strong>기업리스트</strong>
+                    <ul class="com_list">
+                      <li>
+                        <a href="">기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다.</a>
+                        <a href="" class="i_map"></a>
+                      </li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                    </ul>
+                    <!-- pagination -->
+                    <div class="paging">
+                      <ul class="pagination clearfix">
+                        <li class="arrow first"><a href="#">first</a></li>
+                        <li class="arrow prev disable"><a href="#">prev</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="arrow next"><a href="#">next</a></li>
+                        <li class="arrow last"><a href="#">last</a></li>
+                      </ul>
+                    </div>
+                    <!--// pagination -->
+                    <!-- 0416 수정 -->
+                  </li>
+                  <li id="map02">
+                    <strong>기업리스트</strong>
+                    <ul class="com_list">
+                      <li><a href="">기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                    </ul>
+                    <!-- pagination -->
+                    <div class="paging">
+                      <ul class="pagination clearfix">
+                        <li class="arrow first"><a href="#">first</a></li>
+                        <li class="arrow prev disable"><a href="#">prev</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="arrow next"><a href="#">next</a></li>
+                        <li class="arrow last"><a href="#">last</a></li>
+                      </ul>
+                    </div>
+                    <!--// pagination -->
+                  </li>
+                  <li id="map03">
+                    <strong>기업리스트</strong>
+                    <ul class="com_list">
+                      <li><a href="">기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                    </ul>
+                    <!-- pagination -->
+                    <div class="paging">
+                      <ul class="pagination clearfix">
+                        <li class="arrow first"><a href="#">first</a></li>
+                        <li class="arrow prev disable"><a href="#">prev</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="arrow next"><a href="#">next</a></li>
+                        <li class="arrow last"><a href="#">last</a></li>
+                      </ul>
+                    </div>
+                    <!--// pagination -->
+                  </li>
+                  <li id="map04">
+                    <strong>기업리스트</strong>
+                    <ul class="com_list">
+                      <li><a href="">기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                    </ul>
+                    <!-- pagination -->
+                    <div class="paging">
+                      <ul class="pagination clearfix">
+                        <li class="arrow first"><a href="#">first</a></li>
+                        <li class="arrow prev disable"><a href="#">prev</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="arrow next"><a href="#">next</a></li>
+                        <li class="arrow last"><a href="#">last</a></li>
+                      </ul>
+                    </div>
+                    <!--// pagination -->
+                  </li>
+                  <li id="map05">
+                    <strong>기업리스트</strong>
+                    <ul class="com_list">
+                      <li><a href="">기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                    </ul>
+                    <!-- pagination -->
+                    <div class="paging">
+                      <ul class="pagination clearfix">
+                        <li class="arrow first"><a href="#">first</a></li>
+                        <li class="arrow prev disable"><a href="#">prev</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="arrow next"><a href="#">next</a></li>
+                        <li class="arrow last"><a href="#">last</a></li>
+                      </ul>
+                    </div>
+                    <!--// pagination -->
+                  </li>
+                  <li id="map06">
+                    <strong>기업리스트</strong>
+                    <ul class="com_list">
+                      <li><a href="">기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                    </ul>
+                    <!-- pagination -->
+                    <div class="paging">
+                      <ul class="pagination clearfix">
+                        <li class="arrow first"><a href="#">first</a></li>
+                        <li class="arrow prev disable"><a href="#">prev</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="arrow next"><a href="#">next</a></li>
+                        <li class="arrow last"><a href="#">last</a></li>
+                      </ul>
+                    </div>
+                    <!--// pagination -->
+                  </li>
+                  <li id="map07">
+                    <strong>기업리스트</strong>
+                    <ul class="com_list">
+                      <li><a href="">기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                    </ul>
+                    <!-- pagination -->
+                    <div class="paging">
+                      <ul class="pagination clearfix">
+                        <li class="arrow first"><a href="#">first</a></li>
+                        <li class="arrow prev disable"><a href="#">prev</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="arrow next"><a href="#">next</a></li>
+                        <li class="arrow last"><a href="#">last</a></li>
+                      </ul>
+                    </div>
+                    <!--// pagination -->
+                  </li>
+                  <li id="map08">
+                    <strong>기업리스트</strong>
+                    <ul class="com_list">
+                      <li><a href="">기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                    </ul>
+                    <!-- pagination -->
+                    <div class="paging">
+                      <ul class="pagination clearfix">
+                        <li class="arrow first"><a href="#">first</a></li>
+                        <li class="arrow prev disable"><a href="#">prev</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="arrow next"><a href="#">next</a></li>
+                        <li class="arrow last"><a href="#">last</a></li>
+                      </ul>
+                    </div>
+                    <!--// pagination -->
+                  </li>
+                  <li id="map09">
+                    <strong>기업리스트</strong>
+                    <ul class="com_list">
+                      <li><a href="">기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                    </ul>
+                    <!-- pagination -->
+                    <div class="paging">
+                      <ul class="pagination clearfix">
+                        <li class="arrow first"><a href="#">first</a></li>
+                        <li class="arrow prev disable"><a href="#">prev</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="arrow next"><a href="#">next</a></li>
+                        <li class="arrow last"><a href="#">last</a></li>
+                      </ul>
+                    </div>
+                    <!--// pagination -->
+                  </li>
+                  <li id="map10">
+                    <strong>기업리스트</strong>
+                    <ul class="com_list">
+                      <li><a href="">기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                    </ul>
+                    <!-- pagination -->
+                    <div class="paging">
+                      <ul class="pagination clearfix">
+                        <li class="arrow first"><a href="#">first</a></li>
+                        <li class="arrow prev disable"><a href="#">prev</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="arrow next"><a href="#">next</a></li>
+                        <li class="arrow last"><a href="#">last</a></li>
+                      </ul>
+                    </div>
+                    <!--// pagination -->
+                  </li>
+                  <li id="map11">
+                    <strong>기업리스트</strong>
+                    <ul class="com_list">
+                      <li><a href="">기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                    </ul>
+                    <!-- pagination -->
+                    <div class="paging">
+                      <ul class="pagination clearfix">
+                        <li class="arrow first"><a href="#">first</a></li>
+                        <li class="arrow prev disable"><a href="#">prev</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="arrow next"><a href="#">next</a></li>
+                        <li class="arrow last"><a href="#">last</a></li>
+                      </ul>
+                    </div>
+                    <!--// pagination -->
+                  </li>
+                  <li id="map12">
+                    <strong>기업리스트</strong>
+                    <ul class="com_list">
+                      <li><a href="">기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                    </ul>
+                    <!-- pagination -->
+                    <div class="paging">
+                      <ul class="pagination clearfix">
+                        <li class="arrow first"><a href="#">first</a></li>
+                        <li class="arrow prev disable"><a href="#">prev</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="arrow next"><a href="#">next</a></li>
+                        <li class="arrow last"><a href="#">last</a></li>
+                      </ul>
+                    </div>
+                    <!--// pagination -->
+                  </li>
+                  <li id="map13">
+                    <strong>기업리스트</strong>
+                    <ul class="com_list">
+                      <li><a href="">기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                    </ul>
+                    <!-- pagination -->
+                    <div class="paging">
+                      <ul class="pagination clearfix">
+                        <li class="arrow first"><a href="#">first</a></li>
+                        <li class="arrow prev disable"><a href="#">prev</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="arrow next"><a href="#">next</a></li>
+                        <li class="arrow last"><a href="#">last</a></li>
+                      </ul>
+                    </div>
+                    <!--// pagination -->
+                  </li>
+                  <li id="map14">
+                    <strong>기업리스트</strong>
+                    <ul class="com_list">
+                      <li><a href="">기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                    </ul>
+                    <!-- pagination -->
+                    <div class="paging">
+                      <ul class="pagination clearfix">
+                        <li class="arrow first"><a href="#">first</a></li>
+                        <li class="arrow prev disable"><a href="#">prev</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="arrow next"><a href="#">next</a></li>
+                        <li class="arrow last"><a href="#">last</a></li>
+                      </ul>
+                    </div>
+                    <!--// pagination -->
+                  </li>
+                  <li id="map15">
+                    <strong>기업리스트</strong>
+                    <ul class="com_list">
+                      <li>
+                        <a href="">기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다.</a>
+                        <a href="" class="i_map"></a>
+                      </li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                    </ul>
+                    <!-- pagination -->
+                    <div class="paging">
+                      <ul class="pagination clearfix">
+                        <li class="arrow first"><a href="#">first</a></li>
+                        <li class="arrow prev disable"><a href="#">prev</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="arrow next"><a href="#">next</a></li>
+                        <li class="arrow last"><a href="#">last</a></li>
+                      </ul>
+                    </div>
+                    <!--// pagination -->
+                  </li>
+                  <li id="map16">
+                    <strong>기업리스트</strong>
+                    <ul class="com_list">
+                      <li><a href="">기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                      <li><a href="">기업명이 노출됩니다.</a><a href="" class="i_map"></a></li>
+                    </ul>
+                    <!-- pagination -->
+                    <div class="paging">
+                      <ul class="pagination clearfix">
+                        <li class="arrow first"><a href="#">first</a></li>
+                        <li class="arrow prev disable"><a href="#">prev</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="arrow next"><a href="#">next</a></li>
+                        <li class="arrow last"><a href="#">last</a></li>
+                      </ul>
+                    </div>
+                    <!--// pagination -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--// 오아시스 지역 -->
+        <!-- 오아시스 소식 -->
+        <div class="oasis_news">
+          <div class="main_inner">
+            <h2 class="main_title"><span>OASIS</span> 소식<a href="../trend/event_list.html" class="more_btn"></a></h2>
+            <div class="news_prev_wrap">
+              <div class="left">
+                <div class="news_box">
+                  <img src="../../images/main/news_img01.jpg" alt="">
+                  <a class="float_link_box" href="../trend/event_schedule_view.html">
+                    <span class="link_txt">
+                      <span class="top_bor"></span>
+                      <p>독일 소재 부품 투자유치<br/>기업방문 상담</p>
+                      <span class="date">2016.11.30</span>
+                    </span>
+                  </a>
+                </div>
+                <div class="news_box">
+                  <img src="../../images/main/news_img02.jpg" alt="">
+                  <a class="float_link_box" href="../trend/event_schedule_view.html">
+                    <span class="link_txt">
+                      <span class="top_bor"></span>
+                      <p>독일 소재 부품 투자유치<br/>기업방문 상담</p>
+                      <span class="date">2016.11.30</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="center">
+                <div class="news_box">
+                  <img src="../../images/main/news_img03.jpg" alt="">
+                  <a class="float_link_box" href="../trend/event_schedule_view.html">
+                    <span class="link_txt">
+                      <span class="top_bor"></span>
+                      <p>독일 소재 부품 투자유치 기업방문 상담</p>
+                      <span class="date">2016.11.30</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="right">
+                <div class="news_box">
+                  <img src="../../images/main/news_img04.jpg" alt="">
+                  <a class="float_link_box" href="../trend/event_schedule_view.html">
+                    <span class="link_txt">
+                      <span class="top_bor"></span>
+                      <p>독일 소재 부품 투자유치<br/>기업방문 상담</p>
+                      <span class="date">2016.11.30</span>
+                    </span>
+                  </a>
+                </div>
+                <div class="news_box">
+                  <img src="../../images/main/news_img05.jpg" alt="">
+                  <a class="float_link_box" href="../trend/event_schedule_view.html">
+                    <span class="link_txt">
+                      <span class="top_bor"></span>
+                      <p>독일 소재 부품 투자유치<br/>기업방문 상담</p>
+                      <span class="date">2016.11.30</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--// 오아시스 소식 -->
+        <!-- 오아이스 파트너 -->
+        <div class="oasis_partner gray_bg">
+          <div class="main_inner">
+            <h2 class="main_title"><span>OASIS</span>와 함께하는 파트너</h2>
+            <div class="partner_tab">
+              <ul>
+                <li class="active"><a href="#" id="all_view">전체보기</a></li>
+                <li><a href="#" id="related_org">유관기관</a></li>
+                <li><a href="#" id="local_gov">지자체</a></li>
+                <li><a href="#" id="fez">FEZ</a></li>
+              </ul>
+            </div>
+            <ul class="partner_list">
+              <li class="related_org"><a href=""><img src="../../images/main/partners/partner_01.png" alt=""></a></li>
+              <li class="related_org"><a href=""><img src="../../images/main/partners/partner_02.png" alt=""></a></li>
+              <li class="related_org"><a href=""><img src="../../images/main/partners/partner_03.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_04.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_05.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_06.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_07.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_08.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_09.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_10.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_11.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_12.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_13.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_14.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_15.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_16.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_17.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_18.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_19.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_20.png" alt=""></a></li>
+              <li class="local_gov"><a href=""><img src="../../images/main/partners/partner_21.png" alt=""></a></li>
+              <li class="fez"><a href=""><img src="../../images/main/partners/partner_22.png" alt=""></a></li>
+              <li class="fez"><a href=""><img src="../../images/main/partners/partner_23.png" alt=""></a></li>
+              <li class="fez"><a href=""><img src="../../images/main/partners/partner_24.png" alt=""></a></li>
+              <li class="fez"><a href=""><img src="../../images/main/partners/partner_25.png" alt=""></a></li>
+              <li class="fez"><a href=""><img src="../../images/main/partners/partner_26.png" alt=""></a></li>
+              <li class="fez"><a href=""><img src="../../images/main/partners/partner_27.png" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <!--// 오아이스 파트너 -->
+      </div>
+    </div>
+    <!-- //container -->
+    <!-- footer -->
+    <div class="footer">
+      <div class="foot_nav">
+        <div class="inner_con">
+          <ul>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">이용약관</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="inner_con"> 
+        <div class="foot_txt">
+          <p>
+            <span>서울시 강남구 삼성동 159 트레이드타워 12층 (135-729) / Tel : 02-6000-7940</span>
+            <strong>Copyright (c) 2018 한국 소재부품 투자기관 협의회 all right reserved</strong>
+          </p>
+          <span class="tell">대표번호 : 02-6000-7940 | 담당자번호 : 02-6000-7974<br/>담당자메일 : dhkim@kitia.or.kr | 팩스 : 02-6000-7998</span>
+        </div>
+      </div>
+    </div>
+    <!-- //footer -->
+
+    <!-- 공지사항 팝업 -->
+    <!-- <div class="notice_pop">
+      <div class="notice_pop_con">
+        <h3>소재부품기업 정보를 한눈에!</h3>
+        <p>소재부품 기업에게 투자가 정보제공을<br/>통한 투자매칭 지원하는<br/>OASIS 시스템이 리뉴얼 되었습니다.</p>
+        <strong>편리해진 오아시스 시스템을 이용해 보세요.</strong>
+        <div class="notice_btn">
+          <a href="" class="btn btn_blue">자세히 보러가기</a>
+        </div>
+      </div>
+      <div class="notice_pop_bottom">
+        <div class="form-group check_box">
+          <input class="form-control" type="checkbox" id="check1" value="">
+          <label for="check1" class="">오늘 하루 열지 않기</label>
+        </div>
+        <button class="pop_close">닫기</button>
+      </div>
+    </div> -->
+    <!--// 공지사항 팝업 -->
+
+  </div>
+</body>
+
+</html>

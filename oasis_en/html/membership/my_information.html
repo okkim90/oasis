@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OASIS</title>
+  <meta name="subject" content="OASIS" />
+  <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../../css/slick.css">
+  <link rel="stylesheet" type="text/css" href="../../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../../css/common.css">
+  <script type="text/javascript" src="../../js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../js/validator.min.js"></script>
+  <script type="text/javascript" src="../../js/slick.min.js"></script>
+  <script type="text/javascript" src="../../js/common.js"></script>
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- header -->
+    <div class="header">
+      <div class="inner_header">
+        <div class="nav">
+          <h1 class="logo"><a href="../main/index.html">OASIS</a></h1>
+          <div class="gnb">
+            <ul class="login_before">
+              <li class=""><a href="../membership/login.html">로그인</a></li>
+              <li><a href="../membership/membership.html">회원가입</a></li>
+            </ul>
+            <!-- 로그인 후 -->
+            <!-- <ul class="login_after">
+              <li class=""><a href="">로그아웃</a></li>
+              <li><a href="../membership/my_infomation.html">마이페이지</a></li>
+            </ul> -->
+            <!--// 로그인 후 -->
+            <div class="form-group select_box">
+              <label for="" class="sr-only"></label>
+              <select class="form-control" name="">
+                <option class="" value="">KOR</option>
+                <option class="" value="">EUC</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="menu_inner">
+            <ul class="clearfix">
+              <li><a href="../business/company_list.html">기업정보</a></li>
+              <li><a href="../guide/guide.html">이용가이드</a></li>
+              <li><a href="../trend/forum_list.html">OASIS 동향</a></li>
+              <li><a href="../guide/about_oasis.html">OASIS 소개</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //header -->
+    <!-- container -->
+    <div class="container">
+      <div class="title_box bg_mypage">
+        <div class="inner_title">
+          <h2>마이페이지</h2>
+        </div>
+      </div>
+      <div class="breadcrumb_wrap">
+        <div class="breadcrumb_inner">
+          <ul class="clearfix">
+            <li class="home"><a href="../main/index.html">홈</a></li>
+            <li class="breadcrumb_select">
+              <label for="color">마이페이지</label>
+            </li>
+            <li>가입정보 수정</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab_nav">
+        <ul>
+          <li class="active"><a href="my_infomation.html">가입정보 수정</a></li>
+          <li><a href="interesting_company.html">관심기업</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="sub_title">
+          <h3>가입정보</h3>
+        </div>
+        <div class="table_box ver02">
+          <table class="table table_view">
+            <caption>가입정보 수정</caption>
+            <colgroup>
+              <col width="166px">
+              <col width="*">
+              <col width="166px">
+              <col width="*">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>기관분류<span class="must">*</span></th>
+                <td colspan="3">산업통상자원부/지자체</td>
+              </tr>
+              <tr>
+                <th>아이디<span class="must">*</span></th>
+                <td class="id_td">
+                  <div class="form-group">
+                    <label for="" class="sr-only">아이디</label>
+                    <input class="form-control" type="text" id="" value="">
+                  </div>
+                  <button class="btn btn_blue">중복확인</button>
+                </td>
+                <th>이름<span class="must">*</span></th>
+                <td>
+                  <div class="form-group">
+                    <label for="" class="sr-only">이름</label>
+                    <input class="form-control" type="text" id="" value="">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>비밀번호<span class="must">*</span></th>
+                <td class="id_td">
+                  <div class="form-group">
+                    <label for="" class="sr-only">비밀번호</label>
+                    <input class="form-control" type="password" id="" value="" placeholder="숫자/한글 조합으로 6자이상">
+                  </div>
+                  <span class="add_txt">*숫자/한글 조합으로 6자이상</span>
+                </td>
+                <th>비밀번호 확인<span class="must">*</span></th>
+                <td class="id_td">
+                  <div class="form-group">
+                    <label for="" class="sr-only">비밀번호 확인</label>
+                    <input class="form-control" type="password" id="" value="" placeholder="숫자/한글 조합으로 6자이상">
+                  </div>
+                  <span class="add_txt">*숫자/한글 조합으로 6자이상</span>
+                </td>
+              </tr>
+              <tr>
+                <th>가입신청서<span class="must">*</span></th>
+                <td colspan="3">
+                  <!-- 0726 파일 추가 삭제 -->
+                  <ul class="file_list">
+                    <li class="file_li">
+                      <div class="form-group fileBox">
+                        <input type="text" class="form-control fileName" placeholder="파일을 첨부해 주세요">
+                        <label for="uploadBtn01" class="btn_file">찾아보기</label>
+                        <input type="file" id="uploadBtn01" class="uploadBtn">
+                      </div>
+                      <div class=file_txt>
+                        <span>용량제한 : 2MB</span>
+                        <span>확장자명은 pdf, doc, xlsx, ppt, pptx, hwp 형태만 가능합니다.</span>
+                      </div>
+                      <button class="add_file">추가</button>
+                      <span class="file_link">Register.doc<button class="file_close"></button></span>
+                    </li>
+                    <li class="file_li">
+                      <div class="form-group fileBox">
+                        <input type="text" class="form-control fileName" placeholder="파일을 첨부해 주세요">
+                        <label for="uploadBtn02" class="btn_file">찾아보기</label>
+                        <input type="file" id="uploadBtn02" class="uploadBtn">
+                      </div>
+                      <button class="delete_file">삭제</button>
+                      <span class="file_link">Register.doc<button class="file_close"></button></span>
+                    </li>
+                    <li class="file_li">
+                      <div class="form-group fileBox">
+                        <input type="text" class="form-control fileName" placeholder="파일을 첨부해 주세요">
+                        <label for="uploadBtn03" class="btn_file">찾아보기</label>
+                        <input type="file" id="uploadBtn03" class="uploadBtn">
+                      </div>
+                      <button class="delete_file">삭제</button>
+                      <span class="file_link">Register.doc<button class="file_close"></button></span>
+                    </li>
+                    <li class="file_li">
+                      <div class="form-group fileBox">
+                        <input type="text" class="form-control fileName" placeholder="파일을 첨부해 주세요">
+                        <label for="uploadBtn04" class="btn_file">찾아보기</label>
+                        <input type="file" id="uploadBtn04" class="uploadBtn">
+                      </div>
+                      <button class="delete_file">삭제</button>
+                      <span class="file_link">Register.doc<button class="file_close"></button></span>
+                    </li>
+                    <li class="file_li">
+                      <div class="form-group fileBox">
+                        <input type="text" class="form-control fileName" placeholder="파일을 첨부해 주세요">
+                        <label for="uploadBtn05" class="btn_file">찾아보기</label>
+                        <input type="file" id="uploadBtn05" class="uploadBtn">
+                      </div>
+                      <button class="delete_file">삭제</button>
+                      <span class="file_link">Register.doc<button class="file_close"></button></span>
+                    </li>
+                  </ul>
+                  <!--// 0726 파일 추가 삭제 -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="sub_title">
+          <h3>기관정보</h3>
+        </div>
+        <div class="table_box ver02">
+          <table class="table table_view">
+            <caption>기관정보 수정</caption>
+            <colgroup>
+              <col width="166px">
+              <col width="*">
+              <col width="166px">
+              <col width="*">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>회사명<span class="must">*</span></th>
+                <td>
+                  <div class="form-group">
+                    <label for="" class="sr-only">회사명</label>
+                    <input class="form-control" type="text" id="" value="">
+                  </div>
+                </td>
+                <th>부서<span class="must">*</span></th>
+                <td>
+                  <div class="form-group">
+                    <label for="" class="sr-only">부서</label>
+                    <input class="form-control" type="text" id="" value="">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>이메일<span class="must">*</span></th>
+                <td>
+                  <div class="form-group">
+                    <label for="" class="sr-only">이메일</label>
+                    <input class="form-control" type="email" id="" value="" placeholder="" data-error="입력하신 양식이 올바르지 않습니다, 다시 입력해 주세요.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </td>
+                <th>연락처<span class="must">*</span></th>
+                <td class="id_td">
+                  <div class="form-group">
+                    <label for="" class="sr-only">연락처</label>
+                    <input class="form-control" type="text" id="" value="">
+                  </div>
+                  <span class="add_txt" x-ms-format-detection="none">*(예: 02-1111-2222)</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- bottom_btn -->
+        <div class="bottom_btn">
+          <button class="btn btn_blue" type="">개인정보 수정</button>
+          <button class="btn btn_gray_br" type="">취소</button>
+        </div>
+        <!--// bottom_btn -->
+
+        <div class="bottom_txt">
+          <h3>회원탈퇴</h3>
+          <p><span class="must_gray2"></span> 회원 탈퇴시 해당 아이디로 이용한  모든 서비스 이용이 불가합니다.</p>
+          <p><span class="must_gray2"></span> 탈퇴 진행시 가입시 등록했던 모든 개인정보는 삭제되며, 삭제된 데이터는 복구가 불가능 하오니 신중하게 선택해 주십시오. </p>
+          <div class="bottom_btn">
+            <button class="btn btn_gray_br" type="" data-target="#leave_modal" data-toggle="modal">회원탈퇴</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //container -->
+    <!-- footer -->
+    <div class="footer">
+      <div class="foot_nav">
+        <div class="inner_con">
+          <ul>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">이용약관</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="inner_con"> 
+        <div class="foot_txt">
+          <p>
+            <span>서울시 강남구 삼성동 159 트레이드타워 12층 (135-729) / Tel : 02-6000-7940</span>
+            <strong>Copyright (c) 2018 한국 소재부품 투자기관 협의회 all right reserved</strong>
+          </p>
+          <span class="tell">대표번호 : 02-6000-7940 | 담당자번호 : 02-6000-7974<br/>담당자메일 : dhkim@kitia.or.kr | 팩스 : 02-6000-7998</span>
+        </div>
+      </div>
+    </div>
+    <!-- //footer -->
+
+    <!-- 탈퇴 팝업 -->
+    <div class="modal fade modal-center" id="leave_modal">
+      <div class="modal-dialog sm">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <button type="button" class="close" data-dismiss="modal"></button>
+            <h4 class="modal-title">탈퇴요청</h4>
+          </div>
+          <div class="modal-body">
+            <div class="modal_txt">
+              <p>정말로 탈퇴하시겠습니까?</p>
+            </div>
+            <div class="bottom_btn02">
+              <button class="btn btn_blue" data-target="#confirm_modal" data-toggle="modal">탈퇴요청</button>
+              <button class="btn btn_gray_br text-blue">취소</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!--// 탈퇴 팝업 -->
+
+    <!-- 탈퇴 확인 팝업 -->
+    <div class="modal fade modal-center" id="confirm_modal">
+      <div class="modal-dialog sm">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <button type="button" class="close" data-dismiss="modal"></button>
+            <h4 class="modal-title">탈퇴확인</h4>
+          </div>
+          <div class="modal-body">
+            <div class="modal_txt">
+              <p>탈퇴 처리 되었습니다.<br/>이용해 주셔서 감사합니다.</p>
+            </div>
+            <div class="bottom_btn">
+              <button class="btn btn_blue">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!--// 탈퇴 확인 팝업 -->
+
+  </div>
+</body>
+
+</html>
