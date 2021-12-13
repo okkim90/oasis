@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OASIS</title>
+  <meta name="subject" content="OASIS" />
+  <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../../css/slick.css">
+  <link rel="stylesheet" type="text/css" href="../../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../../css/common.css">
+  <script type="text/javascript" src="../../js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../js/validator.min.js"></script>
+  <script type="text/javascript" src="../../js/slick.min.js"></script>
+  <script type="text/javascript" src="../../js/common.js"></script>
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- header -->
+    <div class="header">
+      <div class="inner_header">
+        <div class="nav">
+          <h1 class="logo"><a href="../main/index.html">OASIS</a></h1>
+          <div class="gnb">
+            <ul class="login_before">
+              <li class=""><a href="../membership/login.html">로그인</a></li>
+              <li><a href="../membership/membership.html">회원가입</a></li>
+            </ul>
+            <!-- 로그인 후 -->
+            <!-- <ul class="login_after">
+              <li class=""><a href="">로그아웃</a></li>
+              <li><a href="../membership/my_infomation.html">마이페이지</a></li>
+            </ul> -->
+            <!--// 로그인 후 -->
+            <div class="form-group select_box">
+              <label for="" class="sr-only"></label>
+              <select class="form-control" name="">
+                <option class="" value="">KOR</option>
+                <option class="" value="">EUC</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="menu_inner">
+            <ul class="clearfix">
+              <li><a href="../business/company_list.html">기업정보</a></li>
+              <li><a href="../guide/guide.html">이용가이드</a></li>
+              <li><a href="../trend/forum_list.html">OASIS 동향</a></li>
+              <li><a href="../guide/about_oasis.html">OASIS 소개</a></li>
+              <li class="active"><a href="#">지원사업 신청</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //header -->
+    <!-- container -->
+    <div class="container">
+      <div class="title_box bg_application">
+        <div class="inner_title">
+          <h2>지원사업 신청</h2>
+        </div>
+      </div>
+      <div class="breadcrumb_wrap">
+        <div class="breadcrumb_inner">
+          <ul class="clearfix">
+            <li class="home"><a href="../main/index.html">홈</a></li>
+            <li>지원사업 신청</li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="sub_title">
+          <h3>소부장 비대면 IR 사업 신청</h3>
+        </div>
+
+        <div class="application_wrap">
+            <div class="application_sec">
+                <div class="application_status">
+                    <dl>
+                        <dt>진행 상태</dt>
+                        <dd><strong class="fc_navy">작성중</strong> <span>(신청완료/최종선정/탈락/반려)</span></dd>
+                    </dl>
+                    <div class="desc">
+                        내용 및 서류가 미비한 상태입니다. 수정 후 재 접수 바랍니다.
+                    </div>
+                </div>
+            </div>
+            <div class="application_sec">
+                <h4 class="application_sec_tit">입찰건명</h4>
+                <div class="table_box ver02 bt_black">
+                    <table class="table table_view">
+                        <caption>입찰건명</caption>
+                        <colgroup>
+                            <col width="160px">
+                            <col width="*">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>제목<span class="must">*</span></th>
+                                <td>
+                                <div class="form-group">
+                                    <label for="" class="sr-only">제목</label>
+                                    <input class="form-control" type="text" id="" value="" placeholder="제목을 입력해주세요" data-error="입력하신 양식이 올바르지 않습니다, 다시 입력해 주세요.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="ver_top">내용<span class="must">*</span></th>
+                                <td>
+                                <div class="form-group">
+                                    <label for="" class="sr-only">내용</label>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력해주세요"></textarea>
+                                </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>첨부파일</th>
+                                <td>
+                                <div class="form-group fileBox">
+                                    <input type="text" class="form-control fileName" placeholder="파일을 첨부해 주세요">
+                                    <label for="uploadBtn" class="btn_file">찾아보기</label>
+                                    <input type="file" id="uploadBtn" class="uploadBtn">
+                                </div>
+                                <div class="file_txt">
+                                    <span>용량제한 : 2MB</span>
+                                    <span>확장자명은 pdf, doc, xlsx, ppt, pptx, hwp 형태만 가능합니다.</span>
+                                </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="application_sec">
+                <h4 class="application_sec_tit">회사정보</h4>
+            </div>
+            <div class="application_sec">
+                <h4 class="application_sec_tit">대표이사 정보</h4>
+            </div>
+            <div class="application_sec">
+                <h4 class="application_sec_tit">실무책임자 정보</h4>
+            </div>
+            <div class="application_sec">
+                <h4 class="application_sec_tit">재무현황<span class="must">*</span> <span class="info_txt">(해당사항이 없을 경우 모두 ‘0’ 으로 기재)</span></h4>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- //container -->
+    <!-- footer -->
+    <div class="footer">
+      <div class="foot_nav">
+        <div class="inner_con">
+          <ul>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">이용약관</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="inner_con">
+        <div class="foot_txt">
+          <p>
+            <span>서울시 강남구 삼성동 159 트레이드타워 12층 (135-729) / Tel : 02-6000-7940</span>
+            <strong>Copyright (c) 2018 한국 소재부품 투자기관 협의회 all right reserved</strong>
+          </p>
+          <span class="tell">대표번호 : 02-6000-7940 | 담당자번호 : 02-6000-7974<br/>담당자메일 : dhkim@kitia.or.kr | 팩스 : 02-6000-7998</span>
+        </div>
+      </div>
+    </div>
+    <!-- //footer -->
+  </div>
+</body>
+
+</html>
