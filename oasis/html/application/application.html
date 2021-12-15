@@ -98,7 +98,9 @@
                 </div>
             </div>
             <div class="application_sec">
-                <h4 class="application_sec_tit">입찰건명</h4>
+                <div class="application_sec_tit">
+                  <h4>입찰건명</h4>
+                </div>
                 <div class="table_box ver02 bt_black">
                     <table class="table table_view">
                         <caption>입찰건명</caption>
@@ -118,10 +120,230 @@
                 </div>
             </div>
             <div class="application_sec">
-                <h4 class="application_sec_tit">회사정보</h4>
+              <div class="application_sec_tit">
+                <h4>회사 정보</h4>
+              </div>
+              <div class="table_box ver02 bt_black">
+                <table class="table table_view">
+                    <caption>회사정보</caption>
+                    <colgroup>
+                        <col width="160px">
+                        <col width="*">
+                        <col width="160px">
+                        <col width="*">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th class="wsnw"><div class="th_inner"><div>회사명<span class="must">*</span></div></div></th>
+                            <td colspan="3" class="id_td ty3">
+                              <div class="form-group">
+                                  <label for="" class="sr-only">회사명 국문</label>
+                                  <input class="form-control" type="text" id="" value="" placeholder="국문 입력" data-error="">
+                              </div>
+                              <div class="form-group">
+                                  <label for="" class="sr-only">회사명 영문</label>
+                                  <input class="form-control" type="text" id="" value="" placeholder="영문 입력" data-error="">
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                          <th class="wsnw"><div class="th_inner"><div>대표자명<span class="must">*</span></div></div></th>
+                          <td colspan="3" class="id_td ty3">
+                            <div class="form-group">
+                                <label for="" class="sr-only">대표자명 국문</label>
+                                <input class="form-control" type="text" id="" value="" placeholder="국문 입력" data-error="">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="sr-only">대표자명 영문</label>
+                                <input class="form-control" type="text" id="" value="" placeholder="영문 입력" data-error="">
+                            </div>
+                          </td>
+                      </tr>
+                      <tr>
+                        <th class="wsnw"><div class="th_inner"><div>사업자등록번호<span class="must">*</span></div></div></th>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">사업자등록번호</label>
+                            <input class="form-control" type="text" id="" value="" placeholder="숫자만 입력해 주세요" data-error="">
+                          </div>
+                        </td>
+                        <th class="wsnw"><div class="th_inner"><div>상장여부<span class="must">*</span></div></div></th>
+                        <td>
+                          <div class="form-group select_box">
+                            <label for="" class="sr-only">상장여부</label>
+                            <select class="form-control" name="">
+                              <option class="" value="">선택</option>
+                              <option class="" value="">선택</option>
+                            </select>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="wsnw"><div class="th_inner"><div>설립연도<span class="must">*</span></div></div></th>
+                        <td>
+                          <div class="form-group date">
+                            <label for="" class="sr-only">설립년도</label>
+                            <input class="form-control" type="text" name="" value="" id="datepicker" readonly="" />
+                          </div>
+                        </td>
+                        <th class="wsnw"><div class="th_inner"><div>종업원수<span class="must">*</span></div></div></th>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">종업원수</label>
+                            <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="wsnw"><div class="th_inner"><div>자본금<span class="must">*</span><br><span class="th_sub">(백만원)</span></div></div></th>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">자본금</label>
+                            <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                          </div>
+                        </td>
+                        <th class="wsnw"><div class="th_inner"><div>직전년도 매출액<span class="must">*</span><br><span class="th_sub">(백만원)</span></div> </div></th>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">직전년도 매출액</label>
+                            <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="wsnw"><div class="th_inner"><div>주소<span class="must">*</span></div> </div></th>
+                        <td class="id_td ty2" colspan="3">
+                          <div class="form-group" style="width: 152px">
+                            <label for="" class="sr-only">주소</label>
+                            <input class="form-control" type="text" id="" value="">
+                          </div>
+                          <button class="btn btn_blue" style="width: 118px">우편번호 찾기</button>
+                          <div class="form-group add_input" style="margin-left: 14px">
+                            <label for="" class="sr-only">상세주소</label>
+                            <input class="form-control" type="text" id="" value="">
+                          </div>
+                          <div class="form-group add_input" style="margin-left: 14px">
+                            <label for="" class="sr-only">상세주소</label>
+                            <input class="form-control" type="text" id="" value="">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="wsnw"><div class="th_inner"><div>대표전화<span class="must">*</span></div></div> </th>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">대표전화</label>
+                            <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                          </div>
+                        </td>
+                        <th class="wsnw"><div class="th_inner"><div>홈페이지<span class="must">*</span></div> </div> </th>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">홈페이지</label>
+                            <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="wsnw"><div class="th_inner"><div>소재부품장비 <br> 전문기업확인서<span class="must">*</span></div></div></th>
+                        <td colspan="3" class="">
+                          <div class="form-group fileBox">
+                            <label for="uploadBtn" class="btn_file">파일 첨부</label>
+                            <input type="file" id="uploadBtn" class="uploadBtn">
+                          </div>
+                          <div class="file_txt">
+                            <span>용량제한 : 5MB</span>
+                            <span>확장자가 jpg, jpeg, png, gif, bmp, pdf 파일만 등록이 가능합니다.</span>
+                          </div>
+                          <div class="file_area">
+                            <p class="file_area_txt"><i><img src="../../images/icon/ico_upload.png" alt=""></i> 마우스로 파일을 끌어오세요.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="wsnw"><div class="th_inner"><div>해외수요처 <br> 확보 인증서<span class="must">*</span></div></div></th>
+                        <td colspan="3" class="">
+                          <div class="form-group fileBox">
+                            <label for="uploadBtn" class="btn_file">파일 첨부</label>
+                            <input type="file" id="uploadBtn" class="uploadBtn">
+                          </div>
+                          <div class="file_txt">
+                            <span>용량제한 : 5MB</span>
+                            <span>확장자가 jpg, jpeg, png, gif, bmp, pdf 파일만 등록이 가능합니다.</span>
+                          </div>
+                          <div class="file_area">
+                            <p class="file_area_txt"><i><img src="../../images/icon/ico_upload.png" alt=""></i> 마우스로 파일을 끌어오세요.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="wsnw"><div class="th_inner"><div>업종형태<span class="must">*</span></div></div></th>
+                        <td colspan="3">
+                          <div class="form-group check_box ty2">
+                            <div class="check_box_item">
+                              <input class="form-control" type="checkbox" id="bm01" name="bm">
+                              <label for="bm01" class="">전기</label>
+                            </div>
+                            <div class="check_box_item">
+                              <input class="form-control" type="checkbox" id="bm02" name="bm">
+                              <label for="bm02" class="">전자</label>
+                            </div>
+                            <div class="check_box_item">
+                              <input class="form-control" type="checkbox" id="bm03" name="bm">
+                              <label for="bm03" class="">자동차</label>
+                            </div>
+                            <div class="check_box_item">
+                              <input class="form-control" type="checkbox" id="bm04" name="bm">
+                              <label for="bm04" class="">기계</label>
+                            </div>
+                            <div class="check_box_item">
+                              <input class="form-control" type="checkbox" id="bm05" name="bm">
+                              <label for="bm05" class="">화학</label>
+                            </div>
+                            <div class="check_box_item">
+                              <input class="form-control" type="checkbox" id="bm06" name="bm">
+                              <label for="bm06" class="">금형</label>
+                            </div>
+                            <div class="check_box_item">
+                              <input class="form-control" type="checkbox" id="bm07" name="bm">
+                              <label for="bm07" class="">금속소재</label>
+                            </div>
+                            <div class="check_box_item">
+                              <input class="form-control" type="checkbox" id="bm08" name="bm">
+                              <label for="bm08" class="">섬유화학</label>
+                            </div>
+                            <div class="check_box_item">
+                              <input class="form-control" type="checkbox" id="bm09" name="bm">
+                              <label for="bm09" class="">섬유</label>
+                            </div>
+                            <div class="check_box_item">
+                              <input class="form-control" type="checkbox" id="bm10" name="bm">
+                              <label for="bm10" class="">기타</label>
+                              <input class="form-control d_ib" type="text" id="" value="">
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="wsnw"><div class="th_inner"><div>주요생산품<span class="must">*</span></div></div></th>
+                        <td colspan="3">
+                          <div class="form-group w100">
+                            <label for="" class="sr-only">주요생산품</label>
+                            <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="application_sec">
+                <div class="application_sec_tit">
+                  <h4>대표이사 정보</h4>
+                </div>
                 <div class="table_box ver02 bt_black">
                   <table class="table table_view">
-                      <caption>회사정보</caption>
+                      <caption>대표이사 정보</caption>
                       <colgroup>
                           <col width="160px">
                           <col width="*">
@@ -129,203 +351,740 @@
                           <col width="*">
                       </colgroup>
                       <tbody>
-                          <tr>
-                              <th class="wsnw"><div class="th_inner"><div>회사명<span class="must">*</span></div></div></th>
-                              <td colspan="3" class="id_td ty3">
-                                <div class="form-group">
-                                    <label for="" class="sr-only">회사명 국문</label>
-                                    <input class="form-control" type="text" id="" value="" placeholder="국문 입력" data-error="">
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="sr-only">회사명 영문</label>
-                                    <input class="form-control" type="text" id="" value="" placeholder="영문 입력" data-error="">
-                                </div>
-                              </td>
-                          </tr>
-                          <tr>
-                            <th class="wsnw"><div class="th_inner"><div>대표자명<span class="must">*</span></div></div></th>
-                            <td colspan="3" class="id_td ty3">
-                              <div class="form-group">
-                                  <label for="" class="sr-only">대표자명 국문</label>
-                                  <input class="form-control" type="text" id="" value="" placeholder="국문 입력" data-error="">
-                              </div>
-                              <div class="form-group">
-                                  <label for="" class="sr-only">대표자명 영문</label>
-                                  <input class="form-control" type="text" id="" value="" placeholder="영문 입력" data-error="">
-                              </div>
-                            </td>
-                        </tr>
                         <tr>
-                          <th class="wsnw"><div class="th_inner"><div>사업자등록번호<span class="must">*</span></div></div></th>
+                          <th class="wsnw"><div class="th_inner"><div>성명<span class="must">*</span></div></div></th>
                           <td>
                             <div class="form-group">
-                              <label for="" class="sr-only">사업자등록번호</label>
-                              <input class="form-control" type="text" id="" value="" placeholder="숫자만 입력해 주세요" data-error="">
-                            </div>
-                          </td>
-                          <th class="wsnw"><div class="th_inner"><div>상장여부<span class="must">*</span></div></div></th>
-                          <td>
-                            <div class="form-group select_box">
-                              <label for="" class="sr-only">상장여부</label>
-                              <select class="form-control" name="">
-                                <option class="" value="">선택</option>
-                                <option class="" value="">선택</option>
-                              </select>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th class="wsnw"><div class="th_inner"><div>설립연도<span class="must">*</span></div></div></th>
-                          <td>
-                            <div class="form-group date">
-                              <label for="" class="sr-only">설립년도</label>
-                              <input class="form-control" type="text" name="" value="" id="datepicker" readonly="" />
-                            </div>
-                          </td>
-                          <th class="wsnw"><div class="th_inner"><div>종업원수<span class="must">*</span></div></div></th>
-                          <td>
-                            <div class="form-group">
-                              <label for="" class="sr-only">종업원수</label>
+                              <label for="" class="sr-only">성명</label>
                               <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
                             </div>
                           </td>
-                        </tr>
-                        <tr>
-                          <th class="wsnw"><div class="th_inner"><div>자본금<span class="must">*</span><br><span class="th_sub">(백만원)</span></div></div></th>
+                          <th class="wsnw"><div class="th_inner"><div>이메일<span class="must">*</span></div></div></th>
                           <td>
                             <div class="form-group">
-                              <label for="" class="sr-only">자본금</label>
-                              <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                              <label for="" class="sr-only">이메일</label>
+                              <input class="form-control" type="email" id="" value="" placeholder="" data-error="">
                             </div>
                           </td>
-                          <th class="wsnw"><div class="th_inner"><div>직전년도 매출액<span class="must">*</span><br><span class="th_sub">(백만원)</span></div> </div></th>
+                        </tr>
+                        <tr>
+                          <th class="wsnw"><div class="th_inner"><div>유선전화<span class="must">*</span></div></div></th>
                           <td>
                             <div class="form-group">
-                              <label for="" class="sr-only">직전년도 매출액</label>
-                              <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                              <label for="" class="sr-only">유선전화</label>
+                              <input class="form-control" type="tel" id="" value="" placeholder="" data-error="">
                             </div>
                           </td>
-                        </tr>
-                        <tr>
-                          <th class="wsnw"><div class="th_inner"><div>주소<span class="must">*</span></div> </div></th>
-                          <td class="id_td ty2" colspan="3">
-                            <div class="form-group" style="width: 152px">
-                              <label for="" class="sr-only">주소</label>
-                              <input class="form-control" type="text" id="" value="">
-                            </div>
-                            <button class="btn btn_blue" style="width: 118px">우편번호 찾기</button>
-                            <div class="form-group add_input" style="margin-left: 14px">
-                              <label for="" class="sr-only">상세주소</label>
-                              <input class="form-control" type="text" id="" value="">
-                            </div>
-                            <div class="form-group add_input" style="margin-left: 14px">
-                              <label for="" class="sr-only">상세주소</label>
-                              <input class="form-control" type="text" id="" value="">
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th class="wsnw"><div class="th_inner"><div>대표전화<span class="must">*</span></div></div> </th>
+                          <th class="wsnw"><div class="th_inner"><div>휴대폰<span class="must">*</span></div></div></th>
                           <td>
                             <div class="form-group">
-                              <label for="" class="sr-only">대표전화</label>
-                              <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
-                            </div>
-                          </td>
-                          <th class="wsnw"><div class="th_inner"><div>홈페이지<span class="must">*</span></div> </div> </th>
-                          <td>
-                            <div class="form-group">
-                              <label for="" class="sr-only">홈페이지</label>
-                              <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th class="wsnw"><div class="th_inner"><div>소재부품장비 <br> 전문기업확인서<span class="must">*</span></div></div></th>
-                          <td colspan="3" class="">
-                            <div class="form-group fileBox">
-                              <label for="uploadBtn" class="btn_file">파일 첨부</label>
-                              <input type="file" id="uploadBtn" class="uploadBtn">
-                            </div>
-                            <div class="file_txt">
-                              <span>용량제한 : 5MB</span>
-                              <span>확장자가 jpg, jpeg, png, gif, bmp, pdf 파일만 등록이 가능합니다.</span>           
-                            </div>
-                            <div class="file_area">
-                              <p class="file_area_txt"><i><img src="../../images/icon/ico_upload.png" alt=""></i> 마우스로 파일을 끌어오세요.</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th class="wsnw"><div class="th_inner"><div>업종형태<span class="must">*</span></div></div></th>
-                          <td colspan="3">
-                            <div class="form-group check_box ty2">
-                              <div class="check_box_item">
-                                <input class="form-control" type="checkbox" id="bm01" name="bm">
-                                <label for="bm01" class="">전기</label>
-                              </div>
-                              <div class="check_box_item">
-                                <input class="form-control" type="checkbox" id="bm02" name="bm">
-                                <label for="bm02" class="">전자</label>
-                              </div>
-                              <div class="check_box_item">
-                                <input class="form-control" type="checkbox" id="bm03" name="bm">
-                                <label for="bm03" class="">자동차</label>
-                              </div>
-                              <div class="check_box_item">
-                                <input class="form-control" type="checkbox" id="bm04" name="bm">
-                                <label for="bm04" class="">기계</label>
-                              </div>
-                              <div class="check_box_item">
-                                <input class="form-control" type="checkbox" id="bm05" name="bm">
-                                <label for="bm05" class="">화학</label>
-                              </div>
-                              <div class="check_box_item">
-                                <input class="form-control" type="checkbox" id="bm06" name="bm">
-                                <label for="bm06" class="">금형</label>
-                              </div>
-                              <div class="check_box_item">
-                                <input class="form-control" type="checkbox" id="bm07" name="bm">
-                                <label for="bm07" class="">금속소재</label>
-                              </div>
-                              <div class="check_box_item">
-                                <input class="form-control" type="checkbox" id="bm08" name="bm">
-                                <label for="bm08" class="">섬유화학</label>
-                              </div>
-                              <div class="check_box_item">
-                                <input class="form-control" type="checkbox" id="bm09" name="bm">
-                                <label for="bm09" class="">섬유</label>
-                              </div>
-                              <div class="check_box_item">
-                                <input class="form-control" type="checkbox" id="bm10" name="bm">
-                                <label for="bm10" class="">기타</label>
-                                <input class="form-control d_ib" type="text" id="" value="">
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th class="wsnw"><div class="th_inner"><div>주요생산품<span class="must">*</span></div></div></th>
-                          <td colspan="3">
-                            <div class="form-group w100">
-                              <label for="" class="sr-only">주요생산품</label>
-                              <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                              <label for="" class="sr-only">휴대폰</label>
+                              <input class="form-control" type="tel" id="" value="" placeholder="" data-error="">
                             </div>
                           </td>
                         </tr>
                       </tbody>
                   </table>
+                </div>
+            </div>
+            <div class="application_sec">
+                <div class="application_sec_tit">
+                  <h4>실무책임자 정보</h4>
+                </div>
+                <div class="table_box ver02 bt_black">
+                  <table class="table table_view">
+                    <caption>실무책임자 정보</caption>
+                    <colgroup>
+                        <col width="160px">
+                        <col width="*">
+                        <col width="160px">
+                        <col width="*">
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th class="wsnw"><div class="th_inner"><div>성명<span class="must">*</span></div></div></th>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">성명</label>
+                            <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                          </div>
+                        </td>
+                        <th class="wsnw"><div class="th_inner"><div>직위<span class="must">*</span></div></div></th>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">직위</label>
+                            <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="wsnw"><div class="th_inner"><div>부서<span class="must">*</span></div></div></th>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">부서</label>
+                            <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                          </div>
+                        </td>
+                        <th class="wsnw"><div class="th_inner"><div>유선전화<span class="must">*</span></div></div></th>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">유선전화</label>
+                            <input class="form-control" type="tel" id="" value="" placeholder="" data-error="">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="wsnw"><div class="th_inner"><div>이메일<span class="must">*</span></div></div></th>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">이메일</label>
+                            <input class="form-control" type="email" id="" value="" placeholder="" data-error="">
+                          </div>
+                        </td>
+                        <th class="wsnw"><div class="th_inner"><div>휴대폰<span class="must">*</span></div></div></th>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">휴대폰</label>
+                            <input class="form-control" type="tel" id="" value="" placeholder="" data-error="">
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+            <div class="application_sec">
+                <div class="application_sec_tit">
+                  <h4>재무현황<span class="must">*</span> <span class="info_txt">(해당사항이 없을 경우 모두 ‘0’ 으로 기재)</span></h4>
+                  <span class="unit">단위: 원</span>
+                </div>
+                <div class="table_box ver04">
+                  <table class="table table_list">
+                    <caption>재무현황</caption>
+                    <colgroup>
+                      <col width="148px">
+                      <col width="*">
+                      <col width="*">
+                      <col width="*">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>과목</th>
+                        <th>M-2(2018)</th>
+                        <th>M-1(2019)</th>
+                        <th>M(2020)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="merge_tbl">
+                        <th>유동자산</th>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">유동자산 M-2(2018)</label>
+                            <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">유동자산 M-1(2019)</label>
+                            <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">유동자산 M(2020)</label>
+                            <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="merge_tbl">
+                        <th>비유동자산</th>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">비유동자산 M-2(2018)</label>
+                            <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">비유동자산 M-1(2019)</label>
+                            <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">비유동자산 M(2020)</label>
+                            <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="disabled taR">
+                        <th>자산총계</th>
+                        <td>(유동자산+비유동자산) 계산식</td>
+                        <td>(유동자산+비유동자산) 계산식</td>
+                        <td>4</td>
+                      </tr>
+                      <tr class="merge_tbl">
+                        <th>유동부채</th>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">유동부채 M-2(2018)</label>
+                            <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">유동부채 M-1(2019)</label>
+                            <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">유동부채 M(2020)</label>
+                            <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="merge_tbl">
+                        <th>비유동부채</th>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">비유동부채 M-2(2018)</label>
+                            <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">비유동부채 M-1(2019)</label>
+                            <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <label for="" class="sr-only">비유동부채 M(2020)</label>
+                            <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="disabled taR">
+                        <th>부채총계</th>
+                        <td>(유동부채+비유동부채) 계산식</td>
+                        <td>(유동부채+비유동부채) 계산식</td>
+                        <td>3</td>
+                      </tr>
+                      <tr class="disabled taR">
+                        <th>자본총계</th>
+                        <td>(자산총계-부채총계) 계산식</td>
+                        <td>(자산총계-부채총계) 계산식</td>
+                        <td>1</td>
+                      </tr>
+                      <tr class="disabled taR">
+                        <th>부채비율(%)</th>
+                        <td>(부채총계/자본총계)×100</td>
+                        <td>(부채총계/자본총계)×100</td>
+                        <td>300%</td>
+                      </tr>
+                      <tr class="disabled taR">
+                        <th>유동비율(%)</th>
+                        <td>(유동자산/유동부채)×100</td>
+                        <td>(유동자산/유동부채)×100</td>
+                        <td>100%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+            <div class="application_sec">
+              <div class="application_sec_tit">
+                <h4>손익계산서<span class="must">*</span> <span class="info_txt">(해당사항이 없을 경우 모두 ‘0’ 으로 기재)</span></h4>
+                <span class="unit">단위: 원</span>
               </div>
+              <div class="table_box ver04">
+                <table class="table table_list">
+                  <caption>손익계산서</caption>
+                  <colgroup>
+                    <col width="148px">
+                    <col width="*">
+                    <col width="*">
+                    <col width="*">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>과목</th>
+                      <th>M-2(2018)</th>
+                      <th>M-1(2019)</th>
+                      <th>M(2020)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="merge_tbl">
+                      <th>매출액</th>
+                      <td>
+                        <div class="form-group">
+                          <label for="" class="sr-only">매출액 M-2(2018)</label>
+                          <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group">
+                          <label for="" class="sr-only">매출액 M-1(2019)</label>
+                          <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group">
+                          <label for="" class="sr-only">매출액 M(2020)</label>
+                          <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="merge_tbl">
+                      <th>영업이익(손실)</th>
+                      <td>
+                        <div class="form-group">
+                          <label for="" class="sr-only">영업이익(손실) M-2(2018)</label>
+                          <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group">
+                          <label for="" class="sr-only">영업이익(손실) M-1(2019)</label>
+                          <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group">
+                          <label for="" class="sr-only">영업이익(손실) M(2020)</label>
+                          <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="merge_tbl">
+                      <th>당기순이익(손실)</th>
+                      <td>
+                        <div class="form-group">
+                          <label for="" class="sr-only">당기순이익(손실) M-2(2018)</label>
+                          <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group">
+                          <label for="" class="sr-only">당기순이익(손실) M-1(2019)</label>
+                          <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group">
+                          <label for="" class="sr-only">당기순이익(손실) M(2020)</label>
+                          <input class="form-control taR" type="text" id="" value="0" placeholder="" data-error="">
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </div>
+          <div class="application_sec">
+            <div class="application_sec_tit">
+              <h4>투자유치 관련</h4>
             </div>
-            <div class="application_sec">
-                <h4 class="application_sec_tit">대표이사 정보</h4>
+            <div class="table_box ver02 bt_black">
+              <table class="table table_view">
+                  <caption>투자유치 관련</caption>
+                  <colgroup>
+                      <col width="160px">
+                      <col width="*">
+                      <col width="160px">
+                      <col width="*">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                        <th class="wsnw"><div class="th_inner"><div>투자유치 목적<span class="must">*</span></div></div></th>
+                        <td colspan="3" class="">
+                          <div class="form-group">
+                            <label for="" class="sr-only">투자유치 목적</label>
+                            <textarea name="" id="" cols="30" rows="4"></textarea>
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                      <th class="wsnw"><div class="th_inner"><div>투자유치 방식<span class="must">*</span></div></div></th>
+                      <td colspan="3">
+                          <div class="form-wrap ty_select">
+                            <div class="form-group select_box">
+                              <label for="" class="sr-only">선택</label>
+                              <select class="form-control" name="">
+                                <option class="" value="">선택</option>
+                                <option class="" value="">선택</option>
+                              </select>
+                            </div>
+                            <div class="form-group txt_box">
+                              <label for="" class="sr-only">투자유치 방식</label>
+                              <input class="form-control" type="text" id="" value="">
+                            </div>
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="wsnw"><div class="th_inner"><div>투자유치 희망금액<br><span class="th_sub">(백만원)</span><span class="must">*</span></div></div></th>
+                      <td colspan="3">
+                          <div class="form-wrap ty_select">
+                            <div class="form-group select_box">
+                              <label for="" class="sr-only">선택</label>
+                              <select class="form-control" name="">
+                                <option class="" value="">선택</option>
+                                <option class="" value="">선택</option>
+                              </select>
+                            </div>
+                            <div class="form-group txt_box">
+                              <label for="" class="sr-only">투자유치 희망금액</label>
+                              <input class="form-control" type="text" id="" value="">
+                            </div>
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="wsnw"><div class="th_inner"><div>해외투자유치 <br> 희망협력업체<span class="must">*</span></div></div></th>
+                      <td colspan="3" class="id_td ty3">
+                        <div class="form-group txt_box">
+                          <label for="" class="sr-only">해외투자유치 희망협력업체</label>
+                          <input class="form-control" type="text" id="" value="">
+                        </div>
+                        <div class="add_link"><a href="">OASIS 에서기업정보 검색</a></div>
+                      </td>
+                    </tr>
+                  </tbody>
+              </table>
             </div>
-            <div class="application_sec">
-                <h4 class="application_sec_tit">실무책임자 정보</h4>
+          </div>
+          <div class="application_sec">
+            <div class="application_sec_tit">
+              <h4>대표이사 인적사항</h4>
             </div>
-            <div class="application_sec">
-                <h4 class="application_sec_tit">재무현황<span class="must">*</span> <span class="info_txt">(해당사항이 없을 경우 모두 ‘0’ 으로 기재)</span></h4>
+            <div class="table_box ver02 bt_black">
+              <table class="table table_view">
+                  <caption>대표이사 인적사항</caption>
+                  <colgroup>
+                      <col width="160px">
+                      <col width="*">
+                      <col width="160px">
+                      <col width="*">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                        <th class="wsnw"><div class="th_inner"><div>성명<span class="must">*</span></div></div></th>
+                        <td class="">
+                          <div class="form-group txt_box">
+                            <label for="" class="sr-only">성명</label>
+                            <input class="form-control" type="text" id="" value="">
+                          </div>
+                        </td>
+                        <th class="wsnw"><div class="th_inner"><div>생년월일<span class="must">*</span></div></div></th>
+                        <td class="">
+                          <div class="form-group txt_box">
+                            <label for="" class="sr-only">생년월일</label>
+                            <input class="form-control" type="text" id="" value="">
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                      <th class="wsnw"><div class="th_inner"><div>주소<span class="must">*</span></div> </div></th>
+                      <td class="id_td ty2" colspan="3">
+                        <div class="form-group" style="width: 152px">
+                          <label for="" class="sr-only">주소</label>
+                          <input class="form-control" type="text" id="" value="">
+                        </div>
+                        <button class="btn btn_blue" style="width: 118px">우편번호 찾기</button>
+                        <div class="form-group add_input" style="margin-left: 14px">
+                          <label for="" class="sr-only">상세주소</label>
+                          <input class="form-control" type="text" id="" value="">
+                        </div>
+                        <div class="form-group add_input" style="margin-left: 14px">
+                          <label for="" class="sr-only">상세주소</label>
+                          <input class="form-control" type="text" id="" value="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="wsnw"><div class="th_inner"><div>최종학력<span class="must">*</span></div></div></th>
+                      <td colspan="3">
+                          <div class="form-group txt_box">
+                            <label for="" class="sr-only">최종학력</label>
+                            <input class="form-control" type="text" id="" value="">
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="wsnw no_after"><div class="th_inner"><div>주요경력<span class="must">*</span></div></div></th>
+                      <td colspan="3" class="no_pd">
+                        <div class="table_box ver04">
+                          <table class="table table_list">
+                            <caption>손익계산서</caption>
+                            <colgroup>
+                              <col width="*">
+                              <col width="*">
+                              <col width="*">
+                              <col width="*">
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th>기간</th>
+                                <th>근무처</th>
+                                <th>담당업무</th>
+                                <th>최종직위</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="merge_tbl">
+                                <td>
+                                  <div class="form-group">
+                                    <label for="" class="sr-only">기간</label>
+                                    <input class="form-control " type="text" id="" value="" placeholder="" data-error="">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-group">
+                                    <label for="" class="sr-only">근무처</label>
+                                    <input class="form-control " type="text" id="" value="" placeholder="" data-error="">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-group">
+                                    <label for="" class="sr-only">담당업무</label>
+                                    <input class="form-control " type="text" id="" value="" placeholder="" data-error="">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-group">
+                                    <label for="" class="sr-only">최종직위</label>
+                                    <input class="form-control " type="text" id="" value="" placeholder="" data-error="">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr class="merge_tbl">
+                                <td>
+                                  <div class="form-group">
+                                    <label for="" class="sr-only">기간</label>
+                                    <input class="form-control " type="text" id="" value="" placeholder="" data-error="">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-group">
+                                    <label for="" class="sr-only">근무처</label>
+                                    <input class="form-control " type="text" id="" value="" placeholder="" data-error="">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-group">
+                                    <label for="" class="sr-only">담당업무</label>
+                                    <input class="form-control " type="text" id="" value="" placeholder="" data-error="">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-group">
+                                    <label for="" class="sr-only">최종직위</label>
+                                    <input class="form-control " type="text" id="" value="" placeholder="" data-error="">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr class="merge_tbl">
+                                <td>
+                                  <div class="form-group">
+                                    <label for="" class="sr-only">기간</label>
+                                    <input class="form-control " type="text" id="" value="" placeholder="" data-error="">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-group">
+                                    <label for="" class="sr-only">근무처</label>
+                                    <input class="form-control " type="text" id="" value="" placeholder="" data-error="">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-group">
+                                    <label for="" class="sr-only">담당업무</label>
+                                    <input class="form-control " type="text" id="" value="" placeholder="" data-error="">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-group">
+                                    <label for="" class="sr-only">최종직위</label>
+                                    <input class="form-control " type="text" id="" value="" placeholder="" data-error="">
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="wsnw"><div class="th_inner"><div>대표이사 지분<span class="must">*</span></div></div></th>
+                      <td colspan="3">
+                          <div class="form-group txt_box">
+                            <label for="" class="sr-only">최종학력</label>
+                            <input class="form-control" type="text" id="" value="">
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="wsnw"><div class="th_inner"><div>기타 특이사항<span class="must">*</span></div></div></th>
+                      <td colspan="3">
+                          <div class="form-group txt_box">
+                            <label for="" class="sr-only">최종학력</label>
+                            <input class="form-control" type="text" id="" value="">
+                          </div>
+                      </td>
+                    </tr>
+                  </tbody>
+              </table>
             </div>
+          </div>
+          <div class="application_sec">
+            <div class="application_sec_tit">
+              <h4>경영진 구성<span class="must">*</span></h4>
+            </div>
+            <div class="table_box ver04">
+              <table class="table table_list">
+                <caption>경영진 구성</caption>
+                <colgroup>
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                  <col style="width: 300px;">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>직위</th>
+                    <th>성명</th>
+                    <th>담당분야</th>
+                    <th>나이</th>
+                    <th>학력</th>
+                    <th>주요경력</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="merge_tbl">
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="merge_tbl">
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="merge_tbl">
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="" class="sr-only"></label>
+                        <input class="form-control" type="text" id="" value="" placeholder="" data-error="">
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button class="add_row"><i><img src="../../images/icon/i_add.svg" alt=""></i> 추가</button>
+          </div>
         </div>
       </div>
     </div>

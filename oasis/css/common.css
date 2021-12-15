@@ -424,7 +424,9 @@ h2.main_title > span{color:#17449f}
 
 .form-control.d_ib {display: inline-block;vertical-align: top;width: 311px;margin-left: 14px;}
 
-.form-control.w100 {width: 100%;} 
+.form-control.w100 {width: 100%;}
+
+.form-control.taR {text-align: right;}
 
 .form-group select.form-control{background:url(../images/icon/arrow_select.png) no-repeat 90% center;-webkit-background-size:17px 9px;background-size:17px 9px;}
 
@@ -664,7 +666,7 @@ h2.main_title > span{color:#17449f}
 
 .table thead tr th:first-child,.table tbody tr td:first-child{border-left:0;}
 
-.table tbody tr.i_noti td{background:#f6f6f6;} 
+.table tbody tr.i_noti td{background:#f6f6f6;}
 
 .table_list tbody tr td:nth-child(3){text-align:left;color:#2f3339;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
 
@@ -696,6 +698,10 @@ h2.main_title > span{color:#17449f}
 
 .table_box.ver02 .table_view.table tbody tr td{height:70px;padding:14px 30px}
 
+.table_box.ver02 .table_view.table tbody tr td.no_pd {padding: 0;}
+
+.table_box.ver02 .table_view.table tbody tr td.no_pd td {height: auto;}
+
 .table_box.ver02 .table_view.table tbody tr th{border-left:1px solid #e0e0e0;letter-spacing:-.8px}
 
 .table_box.ver02 .table_view.table tbody tr th:first-child{border-left:0;}
@@ -705,6 +711,10 @@ h2.main_title > span{color:#17449f}
 .table_box.ver02 .table_view tbody tr th{position:relative;text-align:left;font-size:16px;color:#2f3339;padding:14px 20px}
 
 .table_box.ver02 .table_view tbody tr th:after{content:"";display:block;position:absolute;width:1px;height:18px;top:25px;right:0;background:#e0e0e0}
+
+.table_box.ver02 .table_view tbody tr th.no_after {border-right: 1px solid #e0e0e0;}
+
+.table_box.ver02 .table_view tbody tr th.no_after:after {display: none;}
 
 .table_box.ver02 .table_view tbody tr td .form-group.radio_box{padding:10px 0}
 
@@ -791,6 +801,27 @@ h2.main_title > span{color:#17449f}
 .table_box.add_table{border-top:1px solid #ddd;margin-top:80px;}
 
 .table_box.ver02.add_table .table_list tbody tr td{border-left:1px solid #ddd;}
+
+.no_pd .table_box.ver04 {border-top: none;}
+.table_box.ver04 {border-top: 1px solid #2f3339;}
+.table_box.ver04 .table_list thead tr th {height: 70px;background-color: #f6f6f6;border-bottom: 1px solid #e0e0e0;text-align: center;}
+.table_box.ver04 .table_list thead tr th::after {display: none;}
+.table_box.ver04 .table_list th {font-size: 15px;font-weight: bold;color: #2f3339;}
+.table_box.ver04 .table_list thead tr > *, .table_box.ver04 .table_list tbody tr > * {border-bottom: none; border-left: 1px solid #e0e0e0;}
+.table_box.ver04 .table_list tbody tr > *:first-child,
+.table_box.ver04 .table_list thead tr > *:first-child {border-left:0;}
+.table_box.ver04 .table_list tbody tr:last-child > * {border-bottom: 1px solid #e0e0e0;}
+.table_box.ver04 .table_list tbody tr.disabled > * {background-color: #f6f6f6;border-top: 1px solid #e0e0e0;border-bottom: 1px solid #e0e0e0;height: 70px;}
+.table_box.ver04 .table_list tbody tr.taR td {text-align: right;padding-right: 28px;}
+.table_box.ver04 .table_list tbody tr.merge_tbl + tr.merge_tbl > * {padding-top: 0;}
+
+.form-wrap.ty_select {display: flex;}
+.form-wrap .form-group.select_box {flex: 0 0 210px; width: 210px;}
+.form-wrap .form-group.txt_box {flex: 1;margin-left: 14px;}
+
+.add_link {display: inline-block;font-size: 12px;line-height: 1; vertical-align: middle;margin-left: 14px;position: relative;padding-left: 14px;}
+.add_link::before {content:"";width: 8px;height: 7px;background: url(../images/icon/i_must_gray.png) no-repeat 0 0;position: absolute;left: 0;top: 50%;margin-top: -3.5px;}
+.add_link a {display: inline-block;vertical-align: top;color: #17449f;text-decoration: underline;}
 
 .add_td{margin-top:10px;}
 
@@ -1232,7 +1263,10 @@ h2.main_title > span{color:#17449f}
 /* 지원사업 신청 */
 
 .application_wrap {padding-top: 50px;border-top: 3px solid #17449f;}
-.application_sec_tit {font-size: 20px;line-height: 1;margin-bottom: 20px;}
+.application_sec_tit {display: flex;justify-content: space-between; margin-bottom: 20px;}
+.application_sec_tit h4 {font-size: 20px;line-height: 1;}
+.application_sec_tit .info_txt {display: inline-block;font-size: 15px;color: #7e8084;font-weight: normal;vertical-align: top;line-height: 20px;}
+.application_sec_tit .unit {color: #7e8084;font-size: 15px;line-height: 20px;font-weight: normal;}
 .application_sec + .application_sec {margin-top: 50px;}
 
 .application_status {border: 1px solid #e0e0e0;padding: 24px 40px;}
