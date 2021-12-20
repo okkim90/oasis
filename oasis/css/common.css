@@ -1323,8 +1323,9 @@ h2.main_title > span{color:#17449f}
     display: block;
     font-size: 20px;
     line-height: 1;
-    padding-bottom: 15px;
+    padding-bottom: 16px;
     position: relative;
+    font-weight: bold;
 }
 
 .ap_example > strong::after {
