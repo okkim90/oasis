@@ -1287,7 +1287,7 @@ h2.main_title > span{color:#17449f}
 .ap_intro_sec.ty_bg::before {
     content: '';
     position: absolute;
-    width: 100vw;
+    width: 400%;
     height: 100%;
     background-color: #f6f6f6;
     left: 50%;
@@ -1339,7 +1339,7 @@ h2.main_title > span{color:#17449f}
     margin-left: -20px;
 }
 .ap_example_cont {
-    
+
     display: flex;
     margin: 0 -20px;
     margin-top: 20px;
